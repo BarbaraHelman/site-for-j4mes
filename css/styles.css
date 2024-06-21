@@ -29,13 +29,10 @@ body {
 @media (min-width:1366) {
     
 .section-header {
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr;
-    grid-template-areas:
-    "nav" "nav"
-    "section-header" "section-header"
-    "section-release" "aside"} 
+    height: 50px;
+    width: 50px;
+    align-items: center;
+} 
 
 .section-release {
     display: grid;
