@@ -1,0 +1,223 @@
+* {
+    margin: 0;
+    padding: 0;}    
+
+body {
+    margin-top: 16px;
+    margin-left: 60px;
+    margin-right: 60px;
+    font-family: "Roboto", Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    font-weight: normal;
+    font-style: normal;
+    margin-bottom: 60px;
+    color: aliceblue;
+    background-color: #000;
+    border-radius: 8px;
+    border-color: transparent;
+    height: 100vh;
+    width: 100vh;}    
+
+@media (min-width:320px) and (max-width:767px){}
+    
+@media (min-width:768px) and (max-width:1365px) {}
+
+@media (min-width:1366px) {}
+
+
+
+@media (min-width:1366) {
+    
+.section-header {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas:
+    "nav" "nav"
+    "section-header" "section-header"
+    "section-release" "aside"} 
+
+.section-release {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas:
+    "nav" "nav"
+    "section-header" "section-header"
+    "section-release" "aside"} 
+    
+    }
+
+nav {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: center;
+        align-items: center;
+        justify-content: center;
+        gap: 16px;
+        font-weight: bold;}
+    
+.header {
+            display: flex;
+            position:relative;
+            flex-wrap: nowrap;
+            flex-direction: column;
+            align-items: center;}    
+
+
+@font-face {font-family: "sunspire";
+    src: url(../assets/fonts/titles/sunspire.otf);} 
+h1 {font-family:"sunspire", Arial, Helvetica, sans-serif;
+    font-size: 70px;
+    color: blue ;
+    letter-spacing: 5px;
+    background-color: transparent;
+    position: relative;
+    text-align: center;}
+
+@font-face {font-family: "KodeMono-Regular";
+    src: url(../assets/fonts/text/KodeMono-Regular.ttf);}    
+h2 {font-family: "KodeMono-Regular", Arial, Helvetica, sans-serif;
+    font-size: 32px;
+    color:blue;
+    background-color: transparent;}
+   
+#separador {
+            padding-block: 60px;}
+            
+p {font-family:"Roboto";            
+            font-style: normal;
+            font-weight: 400;
+            color: white;
+            background-color: transparent;
+            text-align: left;} 
+    
+    .p_title {
+            font-family:"Roboto", Arial, Helvetica, sans-serif;            
+            font-style: normal;
+            font-weight: 800;
+            color: white;
+            background-color: transparent;
+            text-align: left;}
+
+table {
+    gap: 16px;}
+
+th { /*items de la table */
+        text-align: left;
+        gap: 16px;}
+
+/* ---------------------------GRID--------------------- */
+
+.grid-container {
+    display: grid;
+    grid-template-areas: 
+        "zona1 zona2 zona3";
+    gap: 16px;
+    background-color: aqua;
+    justify-items: center;
+    height: 300px;
+    align-items: center;
+    justify-content: left;}
+
+.grid-item {
+    border: 1px solid transparent;
+    align-items: stretch;}
+
+    #hijo1 {
+        grid-area: zona1;}
+    
+    #hijo2 {
+        grid-area: zona2;}
+
+    #hijo3 {
+        grid-area: zona3;}
+
+/* ---------------------------BUTTONS--------------------- */
+
+button {
+    font-family: "Roboto", Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 8px;
+    border-color: blueviolet;
+    border-style: outset;
+    padding: 8px 16px 8px 16px;
+    align-content:space-evenly;
+    background-color: blueviolet;
+    color: rgb(255, 255, 255);}               
+
+a { /*links*/
+    font-family: "Roboto";
+    font-size: 16px;
+    font-weight: bold;
+    color: blueviolet;}
+
+/* ---------------------------IMAGES--------------------- */
+
+#p4ntera-2 {
+    display: inline-flex;     height: 300px;
+    z-index: 1;}
+    
+#album-destacado {
+        height: 180px;
+        border-radius: 12px;
+        z-index: 2;}
+        
+image-album {
+    display: flex; 
+    gap: 16px;
+    height: 100px;
+    justify-items: center;}
+
+image-rrss {
+        display: flex; 
+        gap: 16px;
+        height: 50px;
+        justify-items: center;}
+
+image-rrss-small {
+        display: flex; 
+        gap: 16px;
+        width: 20px;
+        justify-items: center;}
+    
+#Destacado {
+    grid-template-columns: 50px;
+    grid-template-rows: 50px;
+}
+
+ul {
+    list-style-type: inherit;
+    grid-area: 
+    "zona1 zona2"
+    "zona3 zona4"
+    ;
+}
+
+/* ---------------------------FANTASY FONTS--------------------- */
+
+
+/* ---------------------------SUSCRIBE--------------------- */
+
+fieldset {
+    padding: 60px 60px;
+    background-color: blue;}
+
+label {
+    color: aliceblue;
+    background-color: transparent;
+    padding-right: 8px;}
+
+input{
+    color: rgb(0, 0, 0);
+    background-color: aliceblue;
+    padding: 4px;
+    width: 250px;}
+
+select {
+    background-color: aliceblue;
+    color: #000000;}
+
+footer {
+    text-align: center;}
