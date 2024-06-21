@@ -1,0 +1,68 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.grid-item {
+    background-color: brown;
+}
+
+nav {
+    grid-area: nav;
+}
+
+header {
+box-sizing: ;
+}
+
+p {
+    background-color: aquamarine;
+}
+
+@media (min-width: 320px) and (max-width: 768px) {
+    section {
+            display: grid;
+            grid-template-columns: 1fr 3fr;
+            grid-template-rows: repeat(5, 400px);
+            grid-template-areas:
+            "nav" "nav"
+            "section1" "sector2" 
+            "section2" "section3"
+            "aside" "aside"
+            "footer" "footer"
+            ;
+            gap: 10px;
+        }
+    p {
+        background-color: blueviolet;
+    }
+}
+
+@media (min-width: 769px)  
+{
+    section {
+        display: grid;
+        grid-template-columns: 1fr 3fr;
+        grid-template-rows: repeat(5, 400px);
+        grid-template-areas:
+        "nav" "nav"
+        "section1" "section1"
+        "sector2" "section2"
+        "section3" "aside"
+        "footer" "footer"
+        ;
+        gap: 10px;
+    }
+    
+ p {
+    background-color: blue;
+ }
+}
+
+
+
+/* Breakpoints */
+/* 320 mobile */
+/* 768 tablet */
+/* 1366 desktop */
