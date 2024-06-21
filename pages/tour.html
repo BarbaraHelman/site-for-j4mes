@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>J4mes</title>
+</head>
+<body>
+<link rel="stylesheet" href="../css/styles.css">
+
+<!------------------------------------ Menú --------------------------------------------->
+<nav>
+    <a href="../index.html"><button>Home</button></a>
+    <a href="./music.html"><button>Music</button></a>
+    <a href=""><button>Tours</button></a>
+    <a href="./videos.html"><button>Videos</button></a>
+    <a href="./redes.html"><button>Fandom</button></a>
+</nav>
+
+<section><br><br>
+    <h2>Mapa</h2><br>
+    <img style="width: 1000px" src="../assets/images/map.png" alt="mapa de tours de james rosello">
+</section>
+<!--    <iframe src="<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d13390.768707152405!2d-60.67860397636031!3d-32.95913559656869!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95b7ab71d4358d3f%3A0xb7ef373f1ab15369!2sParque%20Independencia%2C%20S2000%20Rosario%2C%20Santa%20Fe!5e0!3m2!1ses!2sar!4v1717554138112!5m2!1ses!2sar" width="600" height="450"></iframe>
+    </iframe>
+-------------------------- no funcionó el mapa en iframe, necesita api ---------------------------->
+
+<!--------------------------------- Tours ------------------------------------------->
+<section><br><br>
+    <h2>Próx1m0s sh0ws</h2>
+    <div>
+        <ul class="zona1">Argentina
+            <li>Córdoba</li>
+            <li>Buenos Aires</li>
+            <li>Rosario</li>
+        </ul><br>
+        <ul class="zona2">Paraguay
+            <li>Ciudad</li>
+            <li>Ciudad</li>
+            <li>Ciudad</li>
+        </ul>     
+        <a href="./pages/tour.html">Ver tours</a>
+        </div>
+<!----------------------me falta lograr la grid para que cada país sea un bloque independiente--------------->
+</section>
+
+<!--------------------------------- Temas ------------------------------------------->
+<br><br>
+<section>
+    <h2>L0s m4s p3gados</h2>
+    <div>
+    <table>
+        <tbody>
+            <tr>
+                <th> <img class="image-album" id="pantera" src="../assets/images/pantera.jpg" alt="album pantera de james rosello"> </th>
+                <th> <img class="image-album" id="no-pensar" src="../assets/images/no-pensar.jpg" alt="album no-pensar de james rosello"> </th>
+                <th> <img class="image-album" id="conmigo" src="../assets/images/conmigo.jpg" alt="Conmigo y con el"> </th>
+                <th> <img class="image-album" id="pantera" src="../assets/images/pantera.jpg" alt="album pantera de james rosello"> </th>
+                <th> <img class="image-album" id="no-pensar" src="../assets/images/no-pensar.jpg" alt="album no-pensar de james rosello"> </th>
+                <th> <img class="image-album" id="conmigo" src="../assets/images/conmigo.jpg" alt="Conmigo y con el"> </th>
+            </tr>
+        </tbody>
+        <tbody>
+            <th> Pantera </th>
+            <th> No pensar </th>
+            <th> Conmigo y con él </th>
+            <th> Pantera </th>
+            <th> No pensar </th>
+            <th> Conmigo y con él </th>
+        </tbody>
+    </table>
+    </div>
+<!------------me falta lograr ver dónde aplicar el gap para que no queden pegados y cambiar imagenes----------->
+</section>
+<br><br>
+
+<!--------------------------------- Suscribe ------------------------------------------->
+<fieldset>
+    <form action="#" method="get"></form>
+    <h2 style="color: rgb(255, 255, 255);">Suscribite al full fandom</h2>
+    <p>Recibí toda la datita y los pre-saves de los próximos releases, antes que nadie.</p>
+    <label for="Email">Email</label> <input type="email"><br><br>
+    <label for="select">Suscripción a</label>
+    <select name="Suscripcion" Suscripcion>
+        <option value="Musica">Todo</option>
+        <option value="Musica">Música</option>
+        <option value="Tours">Tours</option>
+        <option value="Videos">Videos</option></select><br><br><br>
+    <button type="submit">Suscribirme</button>
+    </form>
+  <!--<input type="reset" value="Borrar todo">--que lo haga BE, al enviar, se resetea-->
+</fieldset><br><br>
+
+  <!--------------------------------- Footer ------------------------------------------->
+
+<footer>
+    Todos los derechos reservados © 153 Productions 
+</footer>
+
+</body>
+</html>
