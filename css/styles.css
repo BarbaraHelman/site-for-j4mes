@@ -18,13 +18,13 @@ body {
     height: 100vh}    
 
 @media (min-width:320px) and (max-width:767px){
-
+    
 }
     
 @media (min-width:768px) and (max-width:1365px) {}
 
 @media (min-width:1366px) {
-
+    
 .section-header {
     height: 50px;
     width: 50px;
