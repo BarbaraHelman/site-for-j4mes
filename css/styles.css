@@ -24,12 +24,53 @@ body {
 @media (min-width:768px) and (max-width:1365px) {}
 
 @media (min-width:1366px) {
+
+nav {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    justify-content: center;
+    gap: 16px;
+    font-weight: bold;
+    }
     
-.section-header {
+.carousel-inner {
+    align-content: center;
+    } 
+
+.ultimo-release-content {
+    margin-top: 32px;
+    display: flex;
+    columns: 12;
+    gap: 32px
+
+    ;
+    }
+
+.ultimo-release-content h6 {
+    font-weight: 800;
+}
+
+.ultimo-release p {
+    width: 50%;
+}
+
+.ultimo-release-redes img {
     height: 50px;
     width: 50px;
-    align-items: center;
-} 
+}
+
+#album-destacado {
+    height: 180px;
+    border-radius: 12px;
+    z-index: 2;}
+
+ 
+
+
+}
 
 .first-section {
     padding-right: 0px;
@@ -48,26 +89,9 @@ body {
     column-gap: 16px;
 }
 
-.section-release {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-areas:
-    "nav" "nav"
-    "section-header" "section-header"
-    "section-release" "aside"} 
-    
-    }
 
-nav {
-        display: flex;
-        flex-direction: row;
-        flex-wrap: nowrap;
-        justify-content: center;
-        align-items: center;
-        justify-content: center;
-        gap: 16px;
-        font-weight: bold;}
-    
+
+
 .header {
             display: flex;
             position:relative;
@@ -170,11 +194,7 @@ a { /*links*/
     display: inline-flex;     height: 300px;
     z-index: 1;}
     
-#album-destacado {
-        height: 180px;
-        border-radius: 12px;
-        z-index: 2;}
-        
+
 image-album {
     display: flex; 
     gap: 16px;
