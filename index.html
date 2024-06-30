@@ -8,53 +8,77 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
     <title>Th1s i5 J4mes</title>
+    <link rel="icon" href="./assets/images/favicon/opc2.png" type="image/x-icon">
 </head>
+
+
 <body>
 <link rel="stylesheet" href="./css/styles.css">
 
-<!------------------------------------ Menú ------------------------------------------->
+<div class="estructura">
+
+<!------------------------------------ Menú ---------------------------------------------->
+
+<div class="navbar">
+
+    <div class="navbar-mobile">
+        <nav class="navbar fixed-top">
+            <div class="container-fluid">
+            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+                <div class="offcanvas-header">
+                <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Th1s is J4mes</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                    <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                    <a class="nav-link" href="./pages/music.html">Music</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./pages/tour.html">Tours</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./pages/videos.html">Videos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./pages/redes.html">Fandom</a>
+                    </li>
+                </ul>
+                </div>
+            </div>
+            </div>
+        </nav>
+    </div>
+
+    <div>
+        <nav class="">
+            <a href="#"><button>Home</button></a>
+            <a href="./pages/music.html"><button>Music</button></a>
+            <a href="./pages/tour.html"><button>Tours</button></a>
+            <a href="./pages/videos.html"><button>Videos</button></a>
+            <a href="./pages/redes.html"><button>Fandom</button></a>
+        </nav>
+    </div>
+
+</div>
+<!--------------------------------- Slider ------------------------------------------------>
+
 <div>
-    <nav>
-    <a href="#"><button>Home</button></a>
-    <a href="./pages/music.html"><button>Music</button></a>
-    <a href="./pages/tour.html"><button>Tours</button></a>
-    <a href="./pages/videos.html"><button>Videos</button></a>
-    <a href="./pages/redes.html"><button>Fandom</button></a>
-    </nav>
-</div>
-
-<!--------------------------------- Slider ------------------------------------------->
     <section class="section-header">
-      <h1>This is J4mes</h1>
-    
-      <div class="carousel slide">
-        <div class="carousel-inner">
-          <div class="carousel-item active">
-            <img src="./assets/images/p4ntera-2.avif" class="d-block" alt="pantera con los comillos afuera">
-          </div>
-          <div class="carousel-item">
-            <img src="./assets/images/p4ntera-2.avif" class="d-block" alt="james rosello">
-          </div>
-          <div class="carousel-item">
-            <img src="./assets/images/p4ntera-2.avif" class="d-block" alt="james rosello con fondo azul">
-          </div>
+        <h1>Th1s is J4mes</h1>
+        <div class="section-header-img">
+            <img src="./assets/images/p4ntera-3.avif" alt="pantera con los colmillos afuera">
         </div>
-    
-        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Previous</span>
-        </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Next</span>
-        </button>
-      </div>
-    
     </section>
-
 </div>
 
-<!--------------------------------- Ultimo release ------------------------------------------->
+<!--------------------------------- Ultimo release ---------------------------------------->
 
 <div class="ultimo-release">
     <section>
@@ -104,93 +128,129 @@
     </section>
 </div>
 
-<!--------------------------------- Tours ------------------------------------------->
-<section><br><br>
-    <h2>Próx1m0s sh0ws</h2>
-    <div>
-        <ul class="zona1">Argentina
-            <li>Córdoba</li>
-            <li>Buenos Aires</li>
-            <li>Rosario</li>
-        </ul><br>
-        <ul class="zona2">Paraguay
-            <li>Ciudad</li>
-            <li>Ciudad</li>
-            <li>Ciudad</li>
-        </ul>     
-        <a href="./pages/tour.html">Ver tours</a>
+<!--------------------------------- Tours ------------------------------------------------->
+<div>
+    <section class="Tours-Home">
+        <h2>Próx1m0s sh0ws</h2>
+
+        <div class="Tours">
+            <ul class="zona1">Argentina
+                <li>Córdoba</li>
+                <li>Buenos Aires</li>
+                <li>Rosario</li>
+            </ul><br>
+            
+            <ul class="zona2">Paraguay
+                <li>Ciudad</li>
+                <li>Ciudad</li>
+                <li>Ciudad</li>
+            </ul><br>
+
+            <ul class="zona3">Zona3
+                <li>Córdoba</li>
+                <li>Buenos Aires</li>
+                <li>Rosario</li>
+            </ul><br>
+        
+            <ul class="zona4">Zona4
+                <li>Ciudad</li>
+                <li>Ciudad</li>
+                <li>Ciudad</li>
+            </ul><br>
+        
+            <a href="./pages/tour.html">Ver tour completo</a>
         </div>
-<!----------------------me falta lograr la grid para que cada país sea un bloque independiente--------------->
 
-</section>
-
-<!--------------------------------- Temas ------------------------------------------->
+    </section>
+</div>
+<!--------------------------------- Más pegados ------------------------------------------->
 <br><br>
-<section>
-    <h2>L0s m4s p3gados</h2>
-    <div>
-    <table>
-        <tbody>
-            <tr>
-                <th> <img class="image-album" id="pantera" src="./assets/images/pantera.jpg" alt="album pantera de james rosello"> </th>
-                <th> <img class="image-album" id="no-pensar" src="./assets/images/no-pensar.jpg" alt="album no-pensar de james rosello"> </th>
-                <th> <img class="image-album" id="conmigo" src="./assets/images/conmigo.jpg" alt="Conmigo y con el"> </th>
-                <th> <img class="image-album" id="pantera" src="./assets/images/pantera.jpg" alt="album pantera de james rosello"> </th>
-                <th> <img class="image-album" id="no-pensar" src="./assets/images/no-pensar.jpg" alt="album no-pensar de james rosello"> </th>
-                <th> <img class="image-album" id="conmigo" src="./assets/images/conmigo.jpg" alt="Conmigo y con el"> </th>
-            </tr>
-        </tbody>
-        <tbody>
-            <th> Pantera </th>
-            <th> No pensar </th>
-            <th> Conmigo y con él </th>
-            <th> Pantera </th>
-            <th> No pensar </th>
-            <th> Conmigo y con él </th>
-        </tbody>
+<div class="mas-pegados">
+    <section class="mas-pegados-title">
+        <div>
+            <h2>L0s m4s p3gados</h2><br>
+        </div>
+
+        <div class="mas-pegados-temas">
+                <div>
+                    <th>
+                        <img class="image-album" src="./assets/images/pantera.jpg" alt="album pantera de james rosello">
+                    </th>
+                    <th> 
+                        <h6>P4ntera</h6>
+                    </th>           
+                </div>
+            
+                <div>
+                    <th>
+                        <img class="image-album" src="./assets/images/no-pensar.jpg" alt="Tema musical no-pensar">
+                    </th>
+                    <th> 
+                        <h6>No pensar</h6>
+                    </th>           
+                </div>
+
+                <div>
+                    <th>
+                        <img class="image-album" src="./assets/images/conmigo.jpg" alt="Tema musical Conmigo y con el"> 
+                    </th>
+                    <th> 
+                        <h6>Conmigo y con él</h6>
+                    </th>           
+                </div>
+             
+                <div>
+                    <th>
+                        <img class="image-album" src="./assets/images/all-star.jpg" alt="Tema musical star"> 
+                    </th>
+                    <th> 
+                        <h6>All Star</h6>
+                    </th>           
+                </div>
+
+                <div>
+                    <th>
+                        <img class="image-album" src="./assets/images/fuma-wi.jpg" alt="Tema musical Fuma wii"> 
+                    </th>
+                    <th> 
+                        <h6>Fuma wii</h6>
+                    </th>           
+                </div>
+
     </table>
     </div>
-<!------------me falta lograr ver dónde aplicar el gap para que no queden pegados y cambiar imagenes----------->
-</section>
+    </section>
+</div>
 <br><br>
 
-<!------------------------------------ Revisar clase de grids-------------------------------------------------->
-<!-- <div>
-<h2>Los más pegados</h2>
-<section class="grid-container">
-<article class="grid-item" #hijo1 > <img class="image-album" id="pantera" src="./assets/images/pantera.jpg" alt="album pantera de james rosello"> </article>
-<article class="grid-item" #hijo2> <img class="image-album" id="no-pensar" src="./assets/images/no-pensar.jpg" alt="album no-pensar de james rosello"></article>
-<article class="grid-item" #hijo3> <img class="image-album" id="conmigo" src="./assets/images/conmigo.jpg" alt="Conmigo y con el"> </article>
-</section>
-</div> -->
+<!--------------------------------- Suscribe --------------------------------------------->
 
-<!--------------------------------- This is ------------------------------------------->
+<div>
+    <fieldset class="suscribe">
+        <form action="#" method="get"></form>
+        <h2 style="color: rgb(255, 255, 255);">Suscr1bit3 al full f4nd0m</h2>
+        <p>Recibí toda la datita y los pre-saves de los próximos releases, antes que nadie.</p><br>
+        <label for="Email">Email</label> <input type="email"><br><br>
+        <label for="select">Suscripción a</label>
+        <select name="Suscripcion" Suscripcion>
+            <option value="Musica">Todo</option>
+            <option value="Musica">Música</option>
+            <option value="Tours">Tours</option>
+            <option value="Videos">Videos</option></select><br><br><br>
+        <button type="submit">Suscribirme</button>
+        </form>
+    </fieldset>
+    <br><br>
+</div>
 
-<!--------------------------------- Fandom ------------------------------------------->
-
-<!--------------------------------- Suscribe ------------------------------------------->
-<fieldset>
-    <form action="#" method="get"></form>
-    <h2 style="color: rgb(255, 255, 255);">Suscribite al full fandom</h2>
-    <p>Recibí toda la datita y los pre-saves de los próximos releases, antes que nadie.</p>
-    <label for="Email">Email</label> <input type="email"><br><br>
-    <label for="select">Suscripción a</label>
-    <select name="Suscripcion" Suscripcion>
-        <option value="Musica">Todo</option>
-        <option value="Musica">Música</option>
-        <option value="Tours">Tours</option>
-        <option value="Videos">Videos</option></select><br><br><br>
-    <button type="submit">Suscribirme</button>
-    </form>
-<!----------------------me falta lograr que el hover del select no sea negro -------------------------------->
-<!----------------<input type="reset" value="Borrar todo">--que lo haga BE, al enviar, se resetea------------>
-</fieldset><br><br>
-
-  <!--------------------------------- Footer ------------------------------------------->
+<!--------------------------------- Footer ------------------------------------------------>
 
 <footer>
     Todos los derechos reservados © 153 Productions 
 </footer>
+
+<!--------------------------------- Cierre html ------------------------------------------->
+</div>
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 
