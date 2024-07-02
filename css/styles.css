@@ -19,35 +19,12 @@ img {
 }
 
 main {
-    padding: 32px 32px;
+    padding: 0px 32px;
     margin: 0px 60px;
     }    
 
 section {
     padding-bottom: 30px;
-}
-
-.nav-link {
-    color: aliceblue;
-    font-family: "Roboto";
-    }
-
-.nav-link.active {
-    font-family: "Roboto";
-    color: blueviolet !important; 
-    font-weight: 800;
-    }
-
-.nav-link:hover {
-    font-family: "Roboto";
-    color: blueviolet !important; 
-    text-decoration: underline;
-    font-weight: 800;
-    }
-    
-.navbar-brand img {
-    width: 50px;
-    height: auto;
     }
 
 @font-face {
@@ -76,6 +53,46 @@ h2 {
     background-color: transparent;
     padding-top: 30px;
     padding-bottom: 16px;
+    }
+
+.navbar {
+    padding: 40px;
+    padding-bottom: 0px;
+    }    
+
+.nav-link {
+    color: aliceblue;
+    font-family: "KodeMono-Regular";
+    }
+
+.nav-link.active {
+    font-family: "KodeMono-Regular";
+    color: blueviolet !important; 
+    font-weight: 800;
+    }
+
+.nav-link:hover {
+    font-family: "KodeMono-Regular";
+    color: blueviolet !important; 
+    text-decoration: underline;
+    font-weight: 800;
+    }
+
+.navbar-brand {
+    color: aliceblue;
+    font-family: "sunspire", Arial, Helvetica, sans-serif ;
+    vertical-align: middle;
+    padding-right: 20px;
+    letter-spacing: 5px;
+    }
+
+.navbar-brand :hover {
+    color: aliceblue !important;
+        }
+
+.navbar-brand img {
+    width: 50px;
+    height: auto;
     }
 
 p {
@@ -148,16 +165,25 @@ h6 {
     }  
 
 #album-destacado {
-    height: 190px;
+    height: 250px;
     }
+
 /* ------------------------------------ tours ----------------------------------*/
 
+.Tours {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: 1fr;
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    }
+/*    
 .Tours {
     display: flex;
     gap: 16px;
     width: 100%;
     justify-content: left;
-    }
+    } */
 
 ul {
     list-style-type: inherit;
@@ -188,10 +214,9 @@ li {
     padding-bottom: 24px;
     }
 
-image-album {
+.image-album {
     display: flex; 
     gap: 16px;
-    height: 100px;
     justify-items: center;
     }
 
@@ -231,11 +256,6 @@ select {
     width: 5em;
     }
 
-/*    
-.inputs-suscribe {
-    }    
-*/
-
 /* ------------------------------------ footer -------------------------------------*/
 
 footer {
@@ -246,27 +266,45 @@ footer {
 
 /*  PAG MUSIC ------------------------------------------------------------------------ */
 
-.ultimo-album-content {
-    margin-top: 2em;
-    margin-bottom: 2em;
+.ultimo-album {
     display: flex;
     columns: 12;
-    gap: 2em;
-    }
-        
-.ultimo-album-content h6 {
-    font-weight: 800;
+    gap: 40px;
+    margin-top: 30px;
     }
         
 .ultimo-album p {
-    width: 50%;
+    width: 70%;
     }
         
 .ultimo-album-redes img {
-    height: 3.125em;
-    width: 3.125em;
+    height: 60px;
+    width: 60px;
     }  
-        
+
+.mas-pegados-music {
+    display: flex;
+    columns: 12;
+    gap: 1em;
+    padding-bottom: 16px;
+    }
+    
+.mas-pegados-music-temas {
+    display: flex;
+    gap: 24px;
+    padding-bottom: 16px;
+    }
+    
+.mas-pegados-music link {
+    padding-bottom: 24px;
+    }
+
+.image-album-music {
+    display: flex; 
+    gap: 16px;
+    justify-items: center;
+    }
+
 /* Mobile -------------------------------------------------------------------------------------------- */
 
 @media (min-width:320px) and (max-width:767px){
@@ -283,6 +321,10 @@ main {
     margin: 0px;
     }    
 
+.navbar {
+    padding: 16px;
+    }    
+
 .navbar-toggler {
     width: auto;
     background-color: blueviolet;
@@ -291,10 +333,6 @@ main {
 .navbar-toggler-icon {
     color: aliceblue;
     }    
-    
-.navbar-brand {
-    display: hidden;
-    }
 
 button {
     font-size: 14px;
@@ -304,10 +342,6 @@ button {
 .container-fluid {
     justify-content: flex-start;
     }    
-
-.container-fluid img {
-    display: none;
-}    
 
 h1 {
     font-size: 24px;
@@ -341,13 +375,22 @@ h6 {
 .ultimo-release p {
     width: 100%;
     }
-            
+ 
+    /*
 .Tours {
     display: flex;
     gap: 16px;
     width: 100%;
     justify-content: left;
     overflow-x: hidden;
+    } */
+
+.Tours {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 1fr;
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
     }
     
 ul {
@@ -363,7 +406,6 @@ ul {
     
 .mas-pegados-temas {
     overflow-x: scroll;
-    scrollbar-color: #000;
     }
 
 fieldset {
@@ -376,6 +418,20 @@ input{
         
 select {
     width: 100%;
+    }
+
+.ultimo-album {
+    display: grid;
+    }
+
+.ultimo-album p {
+    width: 100%;
+    }    
+
+.mas-pegados-music-temas {
+    display: flex;
+    overflow: hidden;
+    overflow-x: scroll;
     }
 
 /* Desktop -------------------------------------------------------------------------------------------- */
