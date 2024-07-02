@@ -10,10 +10,13 @@ body {
     font-style: normal;
     color: aliceblue;
     background-color: #000;
-    border-radius: 12px;
     border-color: transparent;
     overflow-x: hidden;
     }   
+
+img {
+    border-radius: 12px;
+}
 
 main {
     padding: 32px 32px;
@@ -86,16 +89,16 @@ p {
 
 a {
     font-family: "Roboto", Arial, Helvetica, sans-serif;
-    font-size: 1em;
+    font-size: 18px;
     font-weight: bold;
     color: blueviolet;
     }
 
 button {
     font-family: "Roboto", Arial, Helvetica, sans-serif;
-    font-size: 1em;
+    font-size: 18px;
     font-weight: bold;
-    border-radius: 0.5em;
+    border-radius: 12px;
     border-color: blueviolet;
     border-style: outset;
     padding: 0.5em 1em 0.5em 1em;
@@ -104,59 +107,48 @@ button {
     color: rgb(255, 255, 255);
     }         
 
-button :hover {
-    color: #000;
-    }
-
 /* ------------------------------------ this is -------------------------------------*/
 
 .section-header {
     display: flex;
-    justify-content: center;
     flex-direction: column;
     align-items: center;
     }
 
 .section-header-img img {
     width: 70%;
+    align-items: center;
     }
 
 /* ------------------------------------ ultimo release --------------------------------*/
 
 .ultimo-release {
-    display: grid;
-    grid-template-columns: 
-    "imagen" "textos"
-    "imagen" "textos"
-    "redes";
-    rows: 2; 
-    }
-
-.ultimo-release-content {
-    margin-top: 2em;
     display: flex;
     columns: 12;
-    gap: 2em;
+    gap: 40px;
+    margin-top: 30px;
     }
-        
-.ultimo-release-content h6 {
+
+h4 {
+    font-family: "KodeMono-Regular";
+    font-weight: 800;
+    }
+    
+h6 {
     font-weight: 800;
     }
         
 .ultimo-release p {
-    width: 50%;
+    width: 70%;
     }
         
 .ultimo-release-redes img {
-    display: grid;
-    rows: 3;
     height: 60px;
     width: 60px;
     }  
 
 #album-destacado {
     height: 190px;
-    border-radius: 12px;
     }
 /* ------------------------------------ tours ----------------------------------*/
 
@@ -249,8 +241,7 @@ select {
 footer {
     text-align: center;
     color: aliceblue;
-    margin-bottom: 60px;
-    margin-top: 30px;
+    margin-top: 50px;
     }
 
 /*  PAG MUSIC ------------------------------------------------------------------------ */
@@ -276,7 +267,7 @@ footer {
     width: 3.125em;
     }  
         
-/* Media mobile -------------------------------------------------------------------------------------------- */
+/* Mobile -------------------------------------------------------------------------------------------- */
 
 @media (min-width:320px) and (max-width:767px){
 
@@ -288,11 +279,12 @@ body {
     } 
 
 main {
-    padding: 0px;
+    padding: 16px;
     margin: 0px;
     }    
 
 .navbar-toggler {
+    width: auto;
     background-color: blueviolet;
     }
 
@@ -304,6 +296,11 @@ main {
     display: hidden;
     }
 
+button {
+    font-size: 14px;
+    width: 100%;
+    }         
+    
 .container-fluid {
     justify-content: flex-start;
     }    
@@ -313,11 +310,12 @@ main {
 }    
 
 h1 {
-    font-size: 32px;
+    font-size: 24px;
     }        
 
 h2 {
-    font-size: 24em;
+    font-size: 18px;
+    font-weight: 800;
     padding-top: 16px;
     padding-bottom: 8px;
     }
@@ -326,7 +324,61 @@ h2 {
     width: 100%;
     }
 
-/* Media desktop -------------------------------------------------------------------------------------------- */
+.ultimo-release {
+    display: grid;
+    }
+    
+h4 {
+    font-family: "KodeMono-Regular";
+    font-weight: 800;
+    font-size: 16px;
+    }
+        
+h6 {
+    font-weight: 800;
+    }
+            
+.ultimo-release p {
+    width: 100%;
+    }
+            
+.Tours {
+    display: flex;
+    gap: 16px;
+    width: 100%;
+    justify-content: left;
+    overflow-x: hidden;
+    }
+    
+ul {
+    list-style-type: inherit;
+    font-weight: 800;
+    padding-right: 86px;
+    overflow: hidden;
+    }
+
+.mas-pegados {
+    overflow-x: hidden;
+    }
+    
+.mas-pegados-temas {
+    overflow-x: scroll;
+    scrollbar-color: #000;
+    }
+
+fieldset {
+    padding: 16px;
+    }
+        
+input{
+    width: 100%;
+    }
+        
+select {
+    width: 100%;
+    }
+
+/* Desktop -------------------------------------------------------------------------------------------- */
    
 @media (min-width:1366px) {
 }
