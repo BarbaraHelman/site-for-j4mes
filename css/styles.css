@@ -17,8 +17,12 @@ body {
 
 main {
     padding: 32px 32px;
-    margin: 60px 60px;
+    margin: 0px 60px;
     }    
+
+section {
+    padding-bottom: 30px;
+}
 
 .nav-link {
     color: aliceblue;
@@ -50,9 +54,8 @@ main {
     
 h1 {
     font-family:"sunspire", Arial, Helvetica, sans-serif;
-    font-size: 4.375em;
+    font-size: 70px;
     color: blue ;
-    letter-spacing: 5px;
     background-color: transparent;
     position: relative;
     text-align: center;
@@ -68,7 +71,18 @@ h2 {
     font-size: 2em;
     color:blue;
     background-color: transparent;
+    padding-top: 30px;
+    padding-bottom: 16px;
     }
+
+p {
+    font-family:"Roboto";            
+    font-style: normal;
+    font-weight: 400;
+    color: white;
+    background-color: transparent;
+    text-align: left;
+    } 
 
 a {
     font-family: "Roboto", Arial, Helvetica, sans-serif;
@@ -89,58 +103,33 @@ button {
     background-color: blueviolet;
     color: rgb(255, 255, 255);
     }         
-            
-.mas-pegados {
-    display: flex;
-    columns: 12;
-    gap: 1em;
+
+button :hover {
+    color: #000;
     }
+
+/* ------------------------------------ this is -------------------------------------*/
 
 .section-header {
     display: flex;
     justify-content: center;
     flex-direction: column;
     align-items: center;
-}
-
-fieldset {
-    display: block;
-    background-color: blue;
-    border-radius: 12px;
-    border: transparent;
-    }
-    
-label {
-    color: aliceblue;
-    background-color: transparent;
-    padding-right: 0.5em;
-    }
-    
-input{
-    color: rgb(0, 0, 0);
-    background-color: aliceblue;
-    padding: 0.25em;
-    border-radius: 0.5em;
-    border: transparent;
-    }
-    
-select {
-    background-color: aliceblue;
-    color: #000000;
-    border-radius: 0.5em;
-    }
-    
-footer {
-    text-align: center;
-    color: aliceblue;
-    margin-bottom: 3.75em;
-    padding-bottom: 3.75em;
     }
 
-.mas-pegados-temas {
-    display: flex;
-    overflow: scroll;
-    gap: 1em;
+.section-header-img img {
+    width: 70%;
+    }
+
+/* ------------------------------------ ultimo release --------------------------------*/
+
+.ultimo-release {
+    display: grid;
+    grid-template-columns: 
+    "imagen" "textos"
+    "imagen" "textos"
+    "redes";
+    rows: 2; 
     }
 
 .ultimo-release-content {
@@ -149,19 +138,122 @@ footer {
     columns: 12;
     gap: 2em;
     }
-    
+        
 .ultimo-release-content h6 {
     font-weight: 800;
     }
-    
+        
 .ultimo-release p {
     width: 50%;
     }
-    
+        
 .ultimo-release-redes img {
-    height: 3.125em;
-    width: 3.125em;
+    display: grid;
+    rows: 3;
+    height: 60px;
+    width: 60px;
+    }  
+
+#album-destacado {
+    height: 190px;
+    border-radius: 12px;
+    }
+/* ------------------------------------ tours ----------------------------------*/
+
+.Tours {
+    display: flex;
+    gap: 16px;
+    width: 100%;
+    justify-content: left;
+    }
+
+ul {
+    list-style-type: inherit;
+    font-weight: 800;
+    padding-right: 86px;
+    }
+
+li {
+    font-weight: 400;
+    }
+
+/* ------------------------------------ mas pegados -----------------------------------*/
+
+.mas-pegados {
+    display: flex;
+    columns: 12;
+    gap: 1em;
+    padding-bottom: 16px;
+    }
+
+.mas-pegados-temas {
+    display: flex;
+    gap: 24px;
+    padding-bottom: 16px;
+    }
+
+.mas-pegados-link {
+    padding-bottom: 24px;
+    }
+
+image-album {
+    display: flex; 
+    gap: 16px;
+    height: 100px;
+    justify-items: center;
+    }
+
+/* ------------------------------------ suscribe --------------------------------*/
+
+fieldset {
+    display: block;
+    background-color: blue;
+    border-radius: 12px;
+    border: transparent;
+    padding: 60px;
+    margin-bottom: 30px; 
+    margin-top: 30px;   
+    }
+
+label {
+    color: aliceblue;
+    background-color: transparent;
+    padding-right: 8px;
+    }
+    
+input{
+    color: rgb(0, 0, 0);
+    background-color: aliceblue;
+    padding: 8px;
+    border-radius: 12px;
+    border: transparent;
+    width: 50%;
+    }
+    
+select {
+    background-color: aliceblue;
+    color: #000000;
+    border-radius: 12px;
+    padding: 8px;
+    height: 40px;
+    width: 5em;
+    }
+
+/*    
+.inputs-suscribe {
     }    
+*/
+
+/* ------------------------------------ footer -------------------------------------*/
+
+footer {
+    text-align: center;
+    color: aliceblue;
+    margin-bottom: 60px;
+    margin-top: 30px;
+    }
+
+/*  PAG MUSIC ------------------------------------------------------------------------ */
 
 .ultimo-album-content {
     margin-top: 2em;
@@ -182,220 +274,60 @@ footer {
 .ultimo-album-redes img {
     height: 3.125em;
     width: 3.125em;
-    }
-
-.header {
-        display: flex;
-        position:relative;
-        flex-wrap: nowrap;
-        flex-direction: column;
-        align-items: center;}    
-
-#separador {
-        padding-block: 60px;}
+    }  
         
-p {font-family:"Roboto";            
-        font-style: normal;
-        font-weight: 400;
-        color: white;
-        background-color: transparent;
-        text-align: left;} 
-
-.p_title {
-        font-family:"Roboto", Arial, Helvetica, sans-serif;            
-        font-style: normal;
-        font-weight: 800;
-        color: white;
-        background-color: transparent;
-        text-align: left;}
-
-table {
-gap: 16px;}
-
-th { /*items de la table */
-    text-align: left;
-    gap: 16px;}
-
-.grid-container {
-display: grid;
-grid-template-areas: 
-    "zona1 zona2 zona3";
-gap: 16px;
-background-color: aqua;
-justify-items: center;
-height: 300px;
-align-items: center;
-justify-content: left;
-    }
-
-.grid-item {
-border: 1px solid transparent;
-align-items: stretch;
-    }
-
-#hijo1 {
-    grid-area: zona1;
-    }
-
-#hijo2 {
-    grid-area: zona2;
-    }
-
-#hijo3 {
-    grid-area: zona3;
-    }
-
-/* ---------------------------IMAGES--------------------- */
-
-image-album {
-display: flex; 
-gap: 16px;
-height: 100px;
-justify-items: center;}
-
-image-rrss {
-    display: flex; 
-    gap: 16px;
-    height: 50px;
-    justify-items: center;}
-
-image-rrss-small {
-    display: flex; 
-    gap: 16px;
-    width: 20px;
-    justify-items: center;}
-
-#Destacado {
-grid-template-columns: 50px;
-grid-template-rows: 50px;
-}
-
-ul {
-list-style-type: inherit;
-grid-area: 
-"zona1 zona2"
-"zona3 zona4";
-}
-
-.tours {
-display: flex;
-}
-
 /* Media mobile -------------------------------------------------------------------------------------------- */
 
 @media (min-width:320px) and (max-width:767px){
 
 body {
-    margin-left: 1.875em;
-    margin-right: 1.875em;
-    font-size: 0.875em;
+    margin-left: 16px;
+    margin-right: 16px;
+    padding: 0px;
+    font-size: 14px;
     } 
 
 main {
-    padding: 16px;
+    padding: 0px;
+    margin: 0px;
     }    
-
-nav {
-    display: none;
-    } 
 
 .navbar-toggler {
     background-color: blueviolet;
     }
+
 .navbar-toggler-icon {
     color: aliceblue;
-    }        
+    }    
+    
+.navbar-brand {
+    display: hidden;
+    }
+
+.container-fluid {
+    justify-content: flex-start;
+    }    
+
+.container-fluid img {
+    display: none;
+}    
 
 h1 {
-    font-size: 2em;
+    font-size: 32px;
     }        
 
 h2 {
-    font-size: 1.5em;
+    font-size: 24em;
+    padding-top: 16px;
+    padding-bottom: 8px;
     }
 
-.navbar-mobile {
-    display: show;
-    }
-
-fieldset {
-    display: block;
-    background-color: blue;
-    border-radius: 12px;
-    border: transparent;
+.section-header-img img {
+    width: 100%;
     }
 
 /* Media desktop -------------------------------------------------------------------------------------------- */
    
 @media (min-width:1366px) {
-
-body {
-    font-size: 1em;
-    margin: 3.5em;
-    padding-right: 3.75em;
-    }
-
-.navbar-mobile {
-    display: none;
-    }
-
-nav {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    justify-content: center;
-    align-items: center;
-    justify-content: center;
-    gap: 1em;
-    font-weight: bold;
-    margin-bottom: 1.875em;
-    }
-
-.estructura {
-    grid-template-columns: 12;
-    }
-   
-   
-
-.ultimo-release-content {
-    margin-top: 2em;
-    display: flex;
-    columns: 12;
-    gap: 2em
-    ;
-    }
-
-.ultimo-release-content h6 {
-    font-weight: 800;
-    }
-
-.ultimo-release p {
-    width: 50%;
-    }
-
-.ultimo-release-redes img {
-    height: 3.125em;
-    width: 3.125em;
-    }
-
-#album-destacado {
-    height: 11.813em;
-    border-radius: 12px;
-    z-index: 2;
-    }
-
-select {
-    height: 40px;
-    width: 5em;
-    }    
- 
-select :hover {
-    background-color: antiquewhite;
-    }
-
-fieldset {
-    margin-right: 60px;
-    padding: 60px 60px;
-}
 }
 }
