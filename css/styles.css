@@ -17,6 +17,7 @@ body {
 
 main {
     padding: 32px 32px;
+    margin: 60px 60px;
     }    
 
 .nav-link {
@@ -26,15 +27,21 @@ main {
 
 .nav-link.active {
     font-family: "Roboto";
-        color: blueviolet !important; 
-        font-weight: 800;
-        }
-        
+    color: blueviolet !important; 
+    font-weight: 800;
+    }
+
+.nav-link:hover {
+    font-family: "Roboto";
+    color: blueviolet !important; 
+    text-decoration: underline;
+    font-weight: 800;
+    }
     
 .navbar-brand img {
     width: 50px;
     height: auto;
-}
+    }
 
 @font-face {
     font-family: "sunspire";
@@ -63,6 +70,26 @@ h2 {
     background-color: transparent;
     }
 
+a {
+    font-family: "Roboto", Arial, Helvetica, sans-serif;
+    font-size: 1em;
+    font-weight: bold;
+    color: blueviolet;
+    }
+
+button {
+    font-family: "Roboto", Arial, Helvetica, sans-serif;
+    font-size: 1em;
+    font-weight: bold;
+    border-radius: 0.5em;
+    border-color: blueviolet;
+    border-style: outset;
+    padding: 0.5em 1em 0.5em 1em;
+    align-content:space-evenly;
+    background-color: blueviolet;
+    color: rgb(255, 255, 255);
+    }         
+            
 .mas-pegados {
     display: flex;
     columns: 12;
@@ -70,11 +97,9 @@ h2 {
     }
 
 .section-header {
-    align: center;
     display: flex;
     justify-content: center;
     flex-direction: column;
-    align-content: center;
     align-items: center;
 }
 
@@ -191,8 +216,6 @@ th { /*items de la table */
     text-align: left;
     gap: 16px;}
 
-/* ---------------------------GRID--------------------- */
-
 .grid-container {
 display: grid;
 grid-template-areas: 
@@ -202,28 +225,25 @@ background-color: aqua;
 justify-items: center;
 height: 300px;
 align-items: center;
-justify-content: left;}
+justify-content: left;
+    }
 
 .grid-item {
 border: 1px solid transparent;
-align-items: stretch;}
+align-items: stretch;
+    }
 
 #hijo1 {
-    grid-area: zona1;}
+    grid-area: zona1;
+    }
 
 #hijo2 {
-    grid-area: zona2;}
+    grid-area: zona2;
+    }
 
 #hijo3 {
-    grid-area: zona3;}
-
-/* ---------------------------BUTTONS--------------------- */
-
-a { /*links*/
-font-family: "Roboto", Arial, Helvetica, sans-serif;
-font-size: 1em;
-font-weight: bold;
-color: blueviolet;}
+    grid-area: zona3;
+    }
 
 /* ---------------------------IMAGES--------------------- */
 
@@ -335,18 +355,7 @@ nav {
     grid-template-columns: 12;
     }
    
-button {
-    font-family: "Roboto", Arial, Helvetica, sans-serif;
-    font-size: 1em;
-    font-weight: bold;
-    border-radius: 0.5em;
-    border-color: blueviolet;
-    border-style: outset;
-    padding: 0.5em 1em 0.5em 1em;
-    align-content:space-evenly;
-    background-color: blueviolet;
-    color: rgb(255, 255, 255);
-    }        
+   
 
 .ultimo-release-content {
     margin-top: 2em;
