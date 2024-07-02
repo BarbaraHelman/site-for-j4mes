@@ -3,20 +3,6 @@
     padding: 0;
     }
 
-.estructura {
-    display: grid;
-    grid-template-areas: 
-        "navbar"
-        "section-header"
-        "ultimo-release"
-        "Tours-Home"
-        "mas-pegados"
-        "suscribe"
-        "footer";
-    margin: 60px;
-    padding: 30px 30px;
-    }
-
 body {
     height: 100vh;
     font-family: "Roboto", Arial, Helvetica, sans-serif;
@@ -28,6 +14,27 @@ body {
     border-color: transparent;
     overflow-x: hidden;
     }   
+
+main {
+    padding: 32px 32px;
+    }    
+
+.nav-link {
+    color: aliceblue;
+    font-family: "Roboto";
+    }
+
+.nav-link.active {
+    font-family: "Roboto";
+        color: blueviolet !important; 
+        font-weight: 800;
+        }
+        
+    
+.navbar-brand img {
+    width: 50px;
+    height: auto;
+}
 
 @font-face {
     font-family: "sunspire";
@@ -56,16 +63,20 @@ h2 {
     background-color: transparent;
     }
 
-.section-header .ultimo-release .Tours-Home .mas-pegados .ultimo-album .suscribe footer {
-    padding-bottom: 1.875em;
-    margin: 5rem;
-    }    
-
 .mas-pegados {
     display: flex;
     columns: 12;
     gap: 1em;
     }
+
+.section-header {
+    align: center;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
+}
 
 fieldset {
     display: block;
@@ -84,7 +95,6 @@ input{
     color: rgb(0, 0, 0);
     background-color: aliceblue;
     padding: 0.25em;
-    width: 31.25em;
     border-radius: 0.5em;
     border: transparent;
     }
@@ -261,6 +271,10 @@ body {
     font-size: 0.875em;
     } 
 
+main {
+    padding: 16px;
+    }    
+
 nav {
     display: none;
     } 
@@ -271,10 +285,6 @@ nav {
 .navbar-toggler-icon {
     color: aliceblue;
     }        
-
-.estructura {
-    grid-template-columns: 8;
-    }
 
 h1 {
     font-size: 2em;
