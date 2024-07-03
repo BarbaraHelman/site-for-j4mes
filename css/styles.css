@@ -177,13 +177,6 @@ h6 {
     grid-column-gap: 0px;
     grid-row-gap: 0px;
     }
-/*    
-.Tours {
-    display: flex;
-    gap: 16px;
-    width: 100%;
-    justify-content: left;
-    } */
 
 ul {
     list-style-type: inherit;
@@ -283,8 +276,7 @@ footer {
     }  
 
 .mas-pegados-music {
-    display: flex;
-    columns: 12;
+    display: grid;
     gap: 1em;
     padding-bottom: 16px;
     }
@@ -293,6 +285,8 @@ footer {
     display: flex;
     gap: 24px;
     padding-bottom: 16px;
+    overflow: hidden;
+    overflow-x: scroll;
     }
     
 .mas-pegados-music link {
@@ -375,15 +369,6 @@ h6 {
 .ultimo-release p {
     width: 100%;
     }
- 
-    /*
-.Tours {
-    display: flex;
-    gap: 16px;
-    width: 100%;
-    justify-content: left;
-    overflow-x: hidden;
-    } */
 
 .Tours {
     display: grid;
@@ -397,8 +382,12 @@ ul {
     list-style-type: inherit;
     font-weight: 800;
     padding-right: 86px;
-    overflow: hidden;
+    overflow-y: hidden;
     }
+
+.ul-tour {
+    display: none;
+    }    
 
 .mas-pegados {
     overflow-x: hidden;
