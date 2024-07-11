@@ -1,0 +1,59 @@
+.mas-pegados {
+    display: flex;
+    columns: 12;
+    gap: 1em;
+    padding-bottom: 16px;
+    @media (min-width:320px) and (max-width:767px){
+        overflow-x: hidden;
+    }
+}
+
+.mas-pegados-temas {
+    display: flex;
+    gap: 24px;
+    padding-bottom: 16px;
+    @media (min-width:320px) and (max-width:767px){
+        overflow-x: scroll;
+    }
+}
+
+.mas-pegados-link {
+    padding-bottom: 24px;
+}
+
+.image-album {
+    display: flex; 
+    gap: 16px;
+    justify-items: center;
+}
+
+/* Solo en la página music */
+
+.mas-pegados-music {
+    display: grid;
+    gap: 1em;
+    padding-bottom: 16px;
+    }
+    
+.mas-pegados-music-temas {
+    display: flex;
+    gap: 24px;
+    padding-bottom: 16px;
+    overflow: hidden;
+    overflow-x: scroll;
+    @media (min-width:320px) and (max-width:767px){
+        display: flex;
+        overflow: hidden;
+        overflow-x: scroll;
+    }
+}
+    
+.mas-pegados-music link {
+    padding-bottom: 24px;
+    }
+
+.image-album-music {
+    display: flex; 
+    gap: 16px;
+    justify-items: center;
+    }

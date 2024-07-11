@@ -1,0 +1,61 @@
+.navbar {
+    padding: 40px;
+    padding-bottom: 0px;
+    @media (min-width:320px) and (max-width:767px){
+        padding: 16px;
+        }    
+    }    
+
+.nav-link {
+    color: aliceblue;
+    font-family: "KodeMono-Regular";
+    }
+
+.nav-link.active {
+    font-family: "KodeMono-Regular";
+    color: blueviolet !important; 
+    font-weight: 800;
+    }
+    
+.nav-link:hover {
+    font-family: "KodeMono-Regular";
+    color: blueviolet !important; 
+    text-decoration: underline;
+    font-weight: 800;
+    }
+    
+.navbar-brand { 
+    color: aliceblue;
+    font-family: "sunspire", Arial, Helvetica, sans-serif ;
+    vertical-align: middle;
+    padding-right: 20px;
+    letter-spacing: 5px;
+    }
+
+.navbar-brand :hover {
+    color: aliceblue !important;
+    }
+
+.navbar-brand img {
+    width: 50px;
+    height: auto;
+    }
+
+@media (min-width:320px) and (max-width:767px){
+
+.navbar-toggler {
+    width: auto;
+    background-color: blueviolet;
+    }
+    icon {
+        color: aliceblue;    
+   /* .navbar-toggler-icon {
+    color: aliceblue;
+    } */ 
+}
+
+.container-fluid {
+    justify-content: flex-start;
+    }    
+    
+}

@@ -1,0 +1,102 @@
+* {
+    margin: 0;
+    padding: 0;
+/*  box-sizing: border-box; */
+    background-color: #000;
+    color: #FFF;
+}
+
+body {
+    height: 100vh;
+    font-family: "Roboto", Arial, Helvetica, sans-serif;
+    font-weight: normal;
+    font-style: normal;
+    border-color: transparent;
+    overflow-x: hidden;
+    @media (min-width:320px) and (max-width:767px){
+        margin-left: 16px;
+        margin-right: 16px;
+        padding: 0px;
+        font-size: 14px;
+    } 
+}           
+
+
+main {
+    padding: 0px 32px;
+    margin: 0px 60px;
+    @media (min-width:320px) and (max-width:767px){
+        padding: 16px;
+        margin: 0px;
+    }        
+}   
+
+section {
+    padding-bottom: 30px;
+    }
+    
+@font-face {
+    font-family: "sunspire";
+    src: url(../assets/fonts/titles/sunspire.otf);
+} 
+    
+h1 {
+    font-family:"sunspire", Arial, Helvetica, sans-serif;
+    font-size: 70px;
+    color: blue ;
+    background-color: transparent;
+    position: relative;
+    text-align: center;
+    @media (min-width:320px) and (max-width:767px){
+        font-size: 24px;
+    }
+}
+            
+@font-face {
+    font-family: "KodeMono-Regular";
+    src: url(../assets/fonts/text/KodeMono-Regular.ttf);
+} 
+    
+h2 {
+    font-family: "KodeMono-Regular", Arial, Helvetica, sans-serif;
+    font-size: 2em;
+    color:blue;
+    background-color: transparent;
+    padding-top: 30px;
+    padding-bottom: 16px;
+    @media (min-width:320px) and (max-width:767px){
+        font-size: 18px;
+        font-weight: 800;
+        padding-top: 16px;
+        padding-bottom: 8px;
+    }
+}
+
+h4 {
+    font-family: "KodeMono-Regular";
+    font-weight: 800;
+    font-size: 16px;
+    /* no tengo una definicion para mobile */
+}
+        
+h6 {
+    font-weight: 800;
+    /* no tengo una definicion para mobile */
+}
+
+p {
+    font-family:"Roboto";            
+    font-style: normal;
+    font-weight: 400;
+    color: white;
+    background-color: transparent;
+    text-align: left;
+    /* no tengo una definicion para mobile */
+} 
+            
+img {
+    border-radius: 12px;
+}
+
+
+    

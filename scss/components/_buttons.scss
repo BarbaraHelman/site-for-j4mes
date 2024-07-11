@@ -1,0 +1,25 @@
+a {
+    font-family: "Roboto", Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    font-weight: bold;
+    color: blueviolet;
+    }
+
+button {
+    font-family: "Roboto", Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    font-weight: bold;
+    border-radius: 12px;
+    border-color: blueviolet;
+    border-style: outset;
+    padding: 0.5em 1em 0.5em 1em;
+    align-content:space-evenly;
+    background-color: blueviolet;
+    color: rgb(255, 255, 255);
+    @media (min-width:320px) and (max-width:767px){
+        button {
+            font-size: 14px;
+            width: 100%;
+            }                     
+    }         
+}
