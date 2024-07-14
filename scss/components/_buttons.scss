@@ -2,7 +2,7 @@ a {
     font-family: "Roboto", Arial, Helvetica, sans-serif;
     font-size: 18px;
     font-weight: bold;
-    color: blueviolet;
+    color: $violet;
     }
 
 button {
@@ -10,11 +10,11 @@ button {
     font-size: 18px;
     font-weight: bold;
     border-radius: 12px;
-    border-color: blueviolet;
+    border-color: $violet;
     border-style: outset;
     padding: 0.5em 1em 0.5em 1em;
     align-content:space-evenly;
-    background-color: blueviolet;
+    background-color: $violet;
     color: rgb(255, 255, 255);
     @media (min-width:320px) and (max-width:767px){
         button {
