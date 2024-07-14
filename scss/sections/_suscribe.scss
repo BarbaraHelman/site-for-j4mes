@@ -6,20 +6,35 @@ fieldset {
     padding: 60px;
     margin-bottom: 30px; 
     margin-top: 30px;   
-    @media (min-width:320px) and (max-width:767px){
+    h2 {
+        color: #FFF;
+    }
+    label {
+        color: aliceblue;
+        background-color: transparent;
+        padding-right: 8px;
+    }
+    input{
+        color: rgb(0, 0, 0);
+        background-color: aliceblue;
+        padding: 8px;
+        border-radius: 12px;
+        border: transparent;
+        width: 50%; 
+    }
+}
+
+@media (min-width:320px) and (max-width:767px){
+    fieldset {    
         padding: 16px;
-    }
+    } 
+    
 }
 
-h2 {
-    color: #FFF;
-}
 
-label {
-    color: aliceblue;
-    background-color: transparent;
-    padding-right: 8px;
-    }
+
+
+
     
 input{
     color: rgb(0, 0, 0);

@@ -25,8 +25,7 @@ body {
 }
 
 main {
-  padding: 0px 32px;
-  margin: 0px 60px;
+  padding: 0px 60px;
 }
 @media (min-width: 320px) and (max-width: 767px) {
   main {
@@ -46,7 +45,7 @@ section {
 h1 {
   font-family: "sunspire", Arial, Helvetica, sans-serif;
   font-size: 70px;
-  color: blue;
+  color: #0000ff;
   background-color: transparent;
   position: relative;
   text-align: center;
@@ -64,7 +63,7 @@ h1 {
 h2 {
   font-family: "KodeMono-Regular", Arial, Helvetica, sans-serif;
   font-size: 2em;
-  color: blue;
+  color: #0000ff;
   background-color: transparent;
   padding-top: 30px;
   padding-bottom: 16px;
@@ -168,7 +167,10 @@ a {
   font-family: "Roboto", Arial, Helvetica, sans-serif;
   font-size: 18px;
   font-weight: bold;
-  color: blueviolet;
+  color: #8a2be2;
+}
+a :hover {
+  color: #0000ff;
 }
 
 button {
@@ -176,20 +178,23 @@ button {
   font-size: 18px;
   font-weight: bold;
   border-radius: 12px;
-  border-color: blueviolet;
+  border-color: #8a2be2;
   border-style: outset;
   padding: 0.5em 1em 0.5em 1em;
   align-content: space-evenly;
-  background-color: blueviolet;
+  background-color: #8a2be2;
   color: rgb(255, 255, 255);
 }
+button :hover {
+  color: #0000ff;
+}
+
 @media (min-width: 320px) and (max-width: 767px) {
-  button button {
+  button {
     font-size: 14px;
     width: 100%;
   }
 }
-
 .section-header {
   display: flex;
   flex-direction: column;
@@ -385,18 +390,28 @@ fieldset {
   margin-bottom: 30px;
   margin-top: 30px;
 }
+fieldset h2 {
+  color: #FFF;
+}
+fieldset label {
+  color: aliceblue;
+  background-color: transparent;
+  padding-right: 8px;
+}
+fieldset input {
+  color: rgb(0, 0, 0);
+  background-color: aliceblue;
+  padding: 8px;
+  border-radius: 12px;
+  border: transparent;
+  width: 50%;
+}
+
 @media (min-width: 320px) and (max-width: 767px) {
   fieldset {
     padding: 16px;
   }
 }
-
-label {
-  color: aliceblue;
-  background-color: transparent;
-  padding-right: 8px;
-}
-
 input {
   color: rgb(0, 0, 0);
   background-color: aliceblue;

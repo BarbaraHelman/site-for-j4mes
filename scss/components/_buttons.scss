@@ -3,7 +3,10 @@ a {
     font-size: 18px;
     font-weight: bold;
     color: $violet;
-    }
+    & 
+        :hover {color: $blue;
+        }
+}
 
 button {
     font-family: "Roboto", Arial, Helvetica, sans-serif;
@@ -16,10 +19,14 @@ button {
     align-content:space-evenly;
     background-color: $violet;
     color: rgb(255, 255, 255);
-    @media (min-width:320px) and (max-width:767px){
-        button {
-            font-size: 14px;
-            width: 100%;
-            }                     
-    }         
+    & 
+        :hover {color: $blue;
+        }
 }
+
+@media (min-width:320px) and (max-width:767px){
+    button {
+        font-size: 14px;
+        width: 100%;
+        }                     
+}         
