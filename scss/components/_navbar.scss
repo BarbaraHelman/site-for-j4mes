@@ -1,61 +1,53 @@
-.navbar {
-    padding: 40px;
-    padding-bottom: 0px;
-    @media (min-width:320px) and (max-width:767px){
-        padding: 16px;
-        }    
-    }    
-
 .nav-link {
-    color: aliceblue;
+    color: #FFF;
     font-family: "KodeMono-Regular";
+    &:hover {
+        color: $violet !important;
+        text-decoration: underline;
+        font-weight: 800;
     }
+}
 
 .nav-link.active {
-    font-family: "KodeMono-Regular";
-    color: blueviolet !important; 
+    color: $violet !important;
     font-weight: 800;
-    }
-    
-.nav-link:hover {
-    font-family: "KodeMono-Regular";
-    color: blueviolet !important; 
-    text-decoration: underline;
-    font-weight: 800;
-    }
-    
-.navbar-brand { 
-    color: aliceblue;
-    font-family: "sunspire", Arial, Helvetica, sans-serif ;
+}
+
+.navbar-brand {
+    color: #FFF;
+    font-family: "sunspire", Arial, Helvetica, sans-serif;
     vertical-align: middle;
     padding-right: 20px;
     letter-spacing: 5px;
+    &:hover {
+        color: #FFF;
     }
-
-.navbar-brand :hover {
-    color: aliceblue !important;
+    img {
+        width: 50px;
+        height: auto;
     }
-
-.navbar-brand img {
-    width: 50px;
-    height: auto;
-    }
-
-@media (min-width:320px) and (max-width:767px){
-
-.navbar-toggler {
-    width: auto;
-    background-color: blueviolet;
-    }
-    icon {
-        color: aliceblue;    
-   /* .navbar-toggler-icon {
-    color: aliceblue;
-    } */ 
 }
 
-.container-fluid {
-    justify-content: flex-start;
-    }    
-    
+@media (min-width:1366px) and (max-width:1920px) {
+    .navbar {
+        padding: 40px;
+        padding-bottom: 0px;
+    }
+}
+
+@media (min-width:320px) and (max-width:767px) {
+    .navbar {
+    padding: 16px;
+    }
+    .navbar-toggler {
+        width: auto;
+        background-color: $violet;
+    }
+    .navbar-toggler-icon {
+        background-color: $violet;
+        color: #FFF;
+    }
+    .container-fluid {
+        justify-content: flex-start;
+    }
 }

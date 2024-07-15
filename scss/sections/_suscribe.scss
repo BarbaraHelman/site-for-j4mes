@@ -1,61 +1,66 @@
 fieldset {
     display: block;
-    background-color: blue;
+    background-color: $blue;
     border-radius: 12px;
-    border: transparent;
-    padding: 60px;
-    margin-bottom: 30px; 
-    margin-top: 30px;   
+    border: $blue;
     h2 {
         color: #FFF;
+        background-color: $blue;
+        margin: 0px;
     }
     label {
-        color: aliceblue;
+        color: #FFF;
         background-color: transparent;
         padding-right: 8px;
     }
     input{
-        color: rgb(0, 0, 0);
-        background-color: aliceblue;
+        color: #000;
+        background-color: #FFF;
         padding: 8px;
         border-radius: 12px;
         border: transparent;
-        width: 50%; 
+    }
+    .inputs-suscribe {
+        background-color: $blue;
+    }
+    select {
+        background-color: #FFF;
+        color: #000;
+        border-radius: 12px;
+        padding: 8px;
+        height: 40px;
+    }
+    p {
+        background-color: $blue;
+        color: #FFF;
+    }
+}
+
+@media (min-width:1366px) and (max-width:1920px) {
+    fieldset {
+        padding: 60px;
+        margin-bottom: 30px; 
+        margin-top: 30px;   
+        input {
+            width: 50%; 
+        }
+        select {
+            width: 80px;
+        }
     }
 }
 
 @media (min-width:320px) and (max-width:767px){
     fieldset {    
+        margin-bottom: 16px; 
+        margin-top: 16px;   
         padding: 16px;
+        text-align: center;
+        input {
+            width: 100%;
+        }
+        select {
+            width: 100%;
+        }
     } 
-    
-}
-
-
-
-
-
-    
-input{
-    color: rgb(0, 0, 0);
-    background-color: aliceblue;
-    padding: 8px;
-    border-radius: 12px;
-    border: transparent;
-    width: 50%;
-    @media (min-width:320px) and (max-width:767px){
-        width: 100%;
-    }
-}
-    
-select {
-    background-color: aliceblue;
-    color: #000000;
-    border-radius: 12px;
-    padding: 8px;
-    height: 40px;
-    width: 5em;
-    @media (min-width:320px) and (max-width:767px){
-        width: 100%;
-    }
 }

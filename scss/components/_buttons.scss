@@ -1,13 +1,11 @@
 a {
     font-family: "Roboto", Arial, Helvetica, sans-serif;
-    font-size: 18px;
     font-weight: bold;
     color: $violet;
 }
 
 button {
     font-family: "Roboto", Arial, Helvetica, sans-serif;
-    font-size: 18px;
     font-weight: bold;
     border-radius: 12px;
     border-color: $violet;
@@ -15,15 +13,27 @@ button {
     padding: 0.5em 1em 0.5em 1em;
     align-content:space-evenly;
     background-color: $violet;
-    color: rgb(255, 255, 255);
-    & :hover {
-        color: $blue;
+    color: #FFF;
+    }
+
+@media (min-width:1366px) and (max-width:1920px) {
+    a {
+        font-size: 18px;
+    }
+    button {
+        font-size: 18px;
+        &:hover {
+            background-color: $violet-hover;
+        }
     }
 }
 
 @media (min-width:320px) and (max-width:767px){
+    a {
+        font-size: 14px;
+    }
     button {
         font-size: 14px;
         width: 100%;
-        }                     
+    }                     
 }         

@@ -2,7 +2,7 @@
 * {
   margin: 0;
   padding: 0;
-  /*  box-sizing: border-box; */
+  box-sizing: border-box;
   background-color: #000;
   color: #FFF;
 }
@@ -14,28 +14,7 @@ body {
   font-style: normal;
   border-color: transparent;
   overflow-x: hidden;
-}
-@media (min-width: 320px) and (max-width: 767px) {
-  body {
-    margin-left: 16px;
-    margin-right: 16px;
-    padding: 0px;
-    font-size: 14px;
-  }
-}
-
-main {
-  padding: 0px 60px;
-}
-@media (min-width: 320px) and (max-width: 767px) {
-  main {
-    padding: 16px;
-    margin: 0px;
-  }
-}
-
-section {
-  padding-bottom: 30px;
+  text-align: left;
 }
 
 @font-face {
@@ -44,16 +23,10 @@ section {
 }
 h1 {
   font-family: "sunspire", Arial, Helvetica, sans-serif;
-  font-size: 70px;
   color: #0000ff;
   background-color: transparent;
   position: relative;
   text-align: center;
-}
-@media (min-width: 320px) and (max-width: 767px) {
-  h1 {
-    font-size: 24px;
-  }
 }
 
 @font-face {
@@ -62,25 +35,14 @@ h1 {
 }
 h2 {
   font-family: "KodeMono-Regular", Arial, Helvetica, sans-serif;
-  font-size: 2em;
   color: #0000ff;
   background-color: transparent;
-  padding-top: 30px;
-  padding-bottom: 16px;
-}
-@media (min-width: 320px) and (max-width: 767px) {
-  h2 {
-    font-size: 18px;
-    font-weight: 800;
-    padding-top: 16px;
-    padding-bottom: 8px;
-  }
+  font-weight: 800;
 }
 
 h4 {
   font-family: "KodeMono-Regular";
   font-weight: 800;
-  font-size: 16px;
 }
 
 h6 {
@@ -93,68 +55,100 @@ p {
   font-weight: 400;
   color: white;
   background-color: transparent;
-  text-align: left;
 }
 
 img {
   border-radius: 12px;
 }
 
-.navbar {
-  padding: 40px;
-  padding-bottom: 0px;
-}
-@media (min-width: 320px) and (max-width: 767px) {
-  .navbar {
-    padding: 16px;
+@media (min-width: 1366px) and (max-width: 1920px) {
+  body {
+    padding: 0px 60px;
+    background-color: #000;
+  }
+  section {
+    padding-bottom: 30px;
+  }
+  h1 {
+    font-size: 70px;
+  }
+  h2 {
+    font-size: 32px;
+    padding-top: 30px;
+    padding-bottom: 16px;
+  }
+  h4 {
+    font-size: 16px;
   }
 }
-
+@media (min-width: 320px) and (max-width: 767px) {
+  body {
+    padding: 16px;
+    background-color: #000;
+    font-size: 14px;
+  }
+  section {
+    padding-bottom: 30px;
+  }
+  h1 {
+    font-size: 24px;
+  }
+  h2 {
+    font-size: 18px;
+    padding-top: 16px;
+    padding-bottom: 8px;
+  }
+  h4 {
+    font-size: 14px;
+  }
+}
 .nav-link {
-  color: aliceblue;
+  color: #FFF;
   font-family: "KodeMono-Regular";
 }
-
-.nav-link.active {
-  font-family: "KodeMono-Regular";
-  color: blueviolet !important;
-  font-weight: 800;
-}
-
 .nav-link:hover {
-  font-family: "KodeMono-Regular";
-  color: blueviolet !important;
+  color: #8a2be2 !important;
   text-decoration: underline;
   font-weight: 800;
 }
 
+.nav-link.active {
+  color: #8a2be2 !important;
+  font-weight: 800;
+}
+
 .navbar-brand {
-  color: aliceblue;
+  color: #FFF;
   font-family: "sunspire", Arial, Helvetica, sans-serif;
   vertical-align: middle;
   padding-right: 20px;
   letter-spacing: 5px;
 }
-
-.navbar-brand :hover {
-  color: aliceblue !important;
+.navbar-brand:hover {
+  color: #FFF;
 }
-
 .navbar-brand img {
   width: 50px;
   height: auto;
 }
 
+@media (min-width: 1366px) and (max-width: 1920px) {
+  .navbar {
+    padding: 40px;
+    padding-bottom: 0px;
+  }
+}
 @media (min-width: 320px) and (max-width: 767px) {
+  .navbar {
+    padding: 16px;
+  }
   .navbar-toggler {
     width: auto;
-    background-color: blueviolet;
+    background-color: #8a2be2;
   }
-  icon {
-    color: aliceblue;
-    /* .navbar-toggler-icon {
-     color: aliceblue;
-     } */
+  .navbar-toggler-icon {
+    background-color: #8a2be2;
+    color: #FFF;
   }
   .container-fluid {
     justify-content: flex-start;
@@ -162,14 +156,12 @@ img {
 }
 a {
   font-family: "Roboto", Arial, Helvetica, sans-serif;
-  font-size: 18px;
   font-weight: bold;
   color: #8a2be2;
 }
 
 button {
   font-family: "Roboto", Arial, Helvetica, sans-serif;
-  font-size: 18px;
   font-weight: bold;
   border-radius: 12px;
   border-color: #8a2be2;
@@ -177,13 +169,24 @@ button {
   padding: 0.5em 1em 0.5em 1em;
   align-content: space-evenly;
   background-color: #8a2be2;
-  color: rgb(255, 255, 255);
-}
-button :hover {
-  color: #0000ff;
+  color: #FFF;
 }
 
+@media (min-width: 1366px) and (max-width: 1920px) {
+  a {
+    font-size: 18px;
+  }
+  button {
+    font-size: 18px;
+  }
+  button:hover {
+    background-color: #691ab4;
+  }
+}
 @media (min-width: 320px) and (max-width: 767px) {
+  a {
+    font-size: 14px;
+  }
   button {
     font-size: 14px;
     width: 100%;
@@ -199,16 +202,23 @@ i {
   align-items: center;
 }
 
-.section-header-img img {
-  width: 70%;
+.section-header-img {
   align-items: center;
+}
+.section-header-img img {
+  align-items: center;
+}
+
+@media (min-width: 1366px) and (max-width: 1920px) {
+  .section-header-img img {
+    width: 70%;
+  }
 }
 @media (min-width: 320px) and (max-width: 767px) {
   .section-header-img img {
     width: 100%;
   }
 }
-
 /* Solo en la página index: ultimo release */
 .ultimo-release {
   display: flex;
@@ -277,25 +287,17 @@ h6 {
 }
 .mas-pegados {
   display: flex;
-  columns: 12;
-  gap: 1em;
+  gap: 16px;
   padding-bottom: 16px;
-}
-@media (min-width: 320px) and (max-width: 767px) {
-  .mas-pegados {
-    overflow-x: hidden;
-  }
+  overflow: hidden;
+  overflow-x: scroll;
 }
 
 .mas-pegados-temas {
   display: flex;
   gap: 24px;
   padding-bottom: 16px;
-}
-@media (min-width: 320px) and (max-width: 767px) {
-  .mas-pegados-temas {
-    overflow-x: scroll;
-  }
+  overflow-x: hidden;
 }
 
 .mas-pegados-link {
@@ -311,8 +313,12 @@ h6 {
 /* Solo en la página music */
 .mas-pegados-music {
   display: grid;
-  gap: 1em;
+  gap: 16px;
   padding-bottom: 16px;
+}
+
+.mas-pegados-music link {
+  padding-bottom: 24px;
 }
 
 .mas-pegados-music-temas {
@@ -322,17 +328,6 @@ h6 {
   overflow: hidden;
   overflow-x: scroll;
 }
-@media (min-width: 320px) and (max-width: 767px) {
-  .mas-pegados-music-temas {
-    display: flex;
-    overflow: hidden;
-    overflow-x: scroll;
-  }
-}
-
-.mas-pegados-music link {
-  padding-bottom: 24px;
-}
 
 .image-album-music {
   display: flex;
@@ -340,6 +335,19 @@ h6 {
   justify-items: center;
 }
 
+@media (min-width: 1366px) and (max-width: 1920px) {
+  .mas-pegados {
+    columns: 12;
+  }
+}
+@media (min-width: 320px) and (max-width: 767px) {
+  .mas-pegados {
+    columns: 4;
+  }
+  .mas-pegados-music-temas {
+    display: flex;
+  }
+}
 .Tours {
   display: grid;
   grid-template-columns: repeat(5, 1fr);
@@ -381,66 +389,72 @@ li {
 }
 fieldset {
   display: block;
-  background-color: blue;
+  background-color: #0000ff;
   border-radius: 12px;
-  border: transparent;
-  padding: 60px;
-  margin-bottom: 30px;
-  margin-top: 30px;
+  border: #0000ff;
 }
 fieldset h2 {
   color: #FFF;
+  background-color: #0000ff;
+  margin: 0px;
 }
 fieldset label {
-  color: aliceblue;
+  color: #FFF;
   background-color: transparent;
   padding-right: 8px;
 }
 fieldset input {
-  color: rgb(0, 0, 0);
-  background-color: aliceblue;
+  color: #000;
+  background-color: #FFF;
   padding: 8px;
   border-radius: 12px;
   border: transparent;
-  width: 50%;
 }
-
-@media (min-width: 320px) and (max-width: 767px) {
-  fieldset {
-    padding: 16px;
-  }
+fieldset .inputs-suscribe {
+  background-color: #0000ff;
 }
-input {
-  color: rgb(0, 0, 0);
-  background-color: aliceblue;
-  padding: 8px;
-  border-radius: 12px;
-  border: transparent;
-  width: 50%;
-}
-@media (min-width: 320px) and (max-width: 767px) {
-  input {
-    width: 100%;
-  }
-}
-
-select {
-  background-color: aliceblue;
-  color: #000000;
+fieldset select {
+  background-color: #FFF;
+  color: #000;
   border-radius: 12px;
   padding: 8px;
   height: 40px;
-  width: 5em;
+}
+fieldset p {
+  background-color: #0000ff;
+  color: #FFF;
+}
+
+@media (min-width: 1366px) and (max-width: 1920px) {
+  fieldset {
+    padding: 60px;
+    margin-bottom: 30px;
+    margin-top: 30px;
+  }
+  fieldset input {
+    width: 50%;
+  }
+  fieldset select {
+    width: 80px;
+  }
 }
 @media (min-width: 320px) and (max-width: 767px) {
-  select {
+  fieldset {
+    margin-bottom: 16px;
+    margin-top: 16px;
+    padding: 16px;
+    text-align: center;
+  }
+  fieldset input {
+    width: 100%;
+  }
+  fieldset select {
     width: 100%;
   }
 }
-
 footer {
   text-align: center;
-  color: aliceblue;
+  color: #FFF;
   margin-top: 50px;
 }
 
