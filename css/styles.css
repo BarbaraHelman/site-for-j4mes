@@ -384,6 +384,30 @@ ul li {
     display: none;
   }
 }
+.fandom {
+  display: grid;
+  gap: 16px;
+  padding-bottom: 16px;
+}
+
+.fandom-rrss {
+  display: flex;
+  columns: 12;
+  gap: 24px;
+  padding-bottom: 16px;
+}
+
+.image-rrss {
+  display: grid;
+  gap: 16px;
+  justify-items: center;
+}
+
+@media (min-width: 1366px) and (max-width: 1920px) {
+  .fandom-rrss {
+    columns: 12;
+  }
+}
 fieldset {
   display: block;
   background-color: #0000ff;
