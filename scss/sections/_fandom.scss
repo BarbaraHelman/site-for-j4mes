@@ -1,0 +1,30 @@
+.fandom {
+    display:block;
+    gap: 16px;
+    padding-bottom: 16px;
+}
+
+.fandom-rrss {
+    display: grid;
+    gap: 24px;
+    padding-bottom: 16px;
+}
+
+.image-rrss {
+    display: grid; 
+    gap: 16px;
+    justify-items: center;
+}
+
+@media (min-width:1366px) and (max-width:1920px) {
+    .fandom-rrss {
+        columns: 12;
+    }
+}
+
+
+@media (min-width:320px) and (max-width:767px){
+    .fandom-rrss {
+        columns: 4;
+    }
+}
