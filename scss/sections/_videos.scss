@@ -20,20 +20,24 @@
 
 @media (min-width:320px) and (max-width:767px){
     .videos {
+        display: grid;
+        width: 100%;
         h2 {
             text-align: center;
-            padding-bottom: 30px;
+            padding-bottom: 16pxpx;
         }
         .content-videos {
-            display: flex;
-            width: 100%;
-            flex-wrap: wrap;
-            gap: 16px;
+            display: grid;
             justify-content: center;
+            gap: 16px;
+            width: 100%;
+            #hide {
+                display: none;
+            } 
             iframe {
-                width: 100%;
-            }    
+                width: 288px;
+                height: auto;
+            }
         }
-
     }
 }

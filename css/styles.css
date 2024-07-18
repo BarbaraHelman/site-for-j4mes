@@ -301,43 +301,46 @@ h6 {
     width: 100%;
   }
 }
-.mas-pegados {
-  display: flex;
-  gap: 16px;
-  padding-bottom: 16px;
-  overflow: hidden;
-  overflow-x: scroll;
+/* Pagina index*/
+.index-pegados {
+  display: grid;
 }
-
-.mas-pegados-temas {
+.index-pegados .index-pegados-temas {
   display: flex;
   gap: 24px;
   padding-bottom: 16px;
-  overflow-x: hidden;
 }
-
-.mas-pegados-link {
-  padding-bottom: 24px;
-}
-
-.image-album {
-  display: flex;
-  gap: 16px;
+.index-pegados .index-pegados-temas .index-image-album {
+  width: 350px;
   justify-items: center;
 }
 
-/* Solo en la página music */
-.mas-pegados-music {
+@media (min-width: 1366px) and (max-width: 1920px) {
+  h6 {
+    padding-top: 16px;
+    font-size: 24px;
+  }
+}
+@media (min-width: 320px) and (max-width: 767px) {
+  .index-pegados-temas {
+    overflow-x: scroll;
+  }
+  .index-pegados-temas .index-image-album {
+    width: 200px;
+  }
+}
+/* Página music */
+.music-mas-pegados {
   display: grid;
   gap: 16px;
   padding-bottom: 16px;
 }
 
-.mas-pegados-music link {
+.music-mas-pegados link {
   padding-bottom: 24px;
 }
 
-.mas-pegados-music-temas {
+.music-mas-pegados-temas {
   display: flex;
   gap: 24px;
   padding-bottom: 16px;
@@ -345,22 +348,26 @@ h6 {
   overflow-x: scroll;
 }
 
-.image-album-music {
+.music-image-album {
   display: flex;
   gap: 16px;
   justify-items: center;
 }
 
 @media (min-width: 1366px) and (max-width: 1920px) {
-  .mas-pegados {
+  .index-mas-pegados {
     columns: 12;
+  }
+  h6 {
+    padding-top: 16px;
+    font-size: 24px;
   }
 }
 @media (min-width: 320px) and (max-width: 767px) {
-  .mas-pegados {
+  .index-mas-pegados {
     columns: 4;
   }
-  .mas-pegados-music-temas {
+  .music-mas-pegados-temas {
     display: flex;
   }
 }
@@ -375,8 +382,10 @@ ul {
   list-style-type: inherit;
   font-weight: 800;
   padding-right: 86px;
+  font-size: 18px;
 }
 ul li {
+  font-size: 16px;
   font-weight: 400;
 }
 
@@ -490,19 +499,26 @@ ul li {
   }
 }
 @media (min-width: 320px) and (max-width: 767px) {
+  .videos {
+    display: grid;
+    width: 100%;
+  }
   .videos h2 {
     text-align: center;
-    padding-bottom: 30px;
+    padding-bottom: 16pxpx;
   }
   .videos .content-videos {
-    display: flex;
-    width: 100%;
-    flex-wrap: wrap;
-    gap: 16px;
+    display: grid;
     justify-content: center;
+    gap: 16px;
+    width: 100%;
+  }
+  .videos .content-videos #hide {
+    display: none;
   }
   .videos .content-videos iframe {
-    width: 100%;
+    width: 288px;
+    height: auto;
   }
 }
 fieldset {

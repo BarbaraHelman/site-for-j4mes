@@ -81,59 +81,43 @@
         </ul>
         <a href="./pages/tour.html">Ver tours</a>
       </div>
-      <!----------------------me falta lograr la grid para que cada país sea un bloque independiente--------------->
     </section>
-
-    <!--------------------------------- Temas ------------------------------------------->
-    <br><br>
-    <section>
-      <h2>L0s m4s p3gados</h2>
-      <div>
-        <table>
-          <tbody>
-            <tr>
-              <th> <img class="image-album" id="pantera" src="../assets/images/pantera.jpg"
-                  alt="Portada del tema musical Pantera de James Rosello"> </th>
-              <th> <img class="image-album" id="no-pensar" src="../assets/images/no-pensar.jpg"
-                  alt="Portada del tema musical No pensar de James Rosello"> </th>
-              <th> <img class="image-album" id="conmigo" src="../assets/images/conmigo.jpg" alt="Portada del tema musical Conmigo y con el de James Rosello ">
-              </th>
-            </tr>
-          </tbody>
-          <tbody>
-            <th> Pantera </th>
-            <th> No pensar </th>
-            <th> Conmigo y con él </th>
-          </tbody>
-        </table>
-      </div>
-      <!------------me falta lograr ver dónde aplicar el gap para que no queden pegados y cambiar imagenes----------->
-    </section>
-    <br><br>
-
+    <!--------------------------------- Playlist ------------------------------------------->
+      <section>
+        <div>
+          <h2>Spoti</h2>
+        </div>
+          <div>
+            <iframe style="border-radius:12px" src="https://open.spotify.com/embed/artist/1QR3Y3SClEg7rddguLp2Oa?utm_source=generator&theme=0" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+        </div>
+      </section>
     <!--------------------------------- Suscribe ------------------------------------------->
     <fieldset>
-      <form action="#" method="get"></form>
-      <h2 style="color: rgb(255, 255, 255);">Suscribite al full fandom</h2>
+      <div>
+      <h2>Suscribite al full fandom</h2>
+      </div>
       <p>Recibí toda la datita y los pre-saves de los próximos releases, antes que nadie.</p>
-      <label for="Email">Email</label> <input type="email"><br><br>
-      <label for="select">Suscripción a</label>
-      <select name="Suscripcion" Suscripcion>
-        <option value="Musica">Todo</option>
-        <option value="Musica">Música</option>
-        <option value="Tours">Tours</option>
-        <option value="Videos">Videos</option>
-      </select><br><br><br>
-      <button type="submit">Suscribirme</button>
-      </form>
-      <!--<input type="reset" value="Borrar todo">--que lo haga BE, al enviar, se resetea-->
-    </fieldset><br><br>
+      
+      <div class="inputs-suscribe">
+        <label for="Email">Email</label> <input type="email"><br><br>
 
-    <!--------------------------------- Footer ------------------------------------------->
+        <label for="select">Suscripción a</label>
+        <select name="Suscripcion" Suscripcion>
+          <option value="Todo">Todo</option>
+          <option value="Musica">Música</option>
+          <option value="Tours">Tours</option>
+          <option value="Videos">Videos</option>
+        </select><br><br>
+      
+        <button type="submit">Suscribirme</button>
 
-    <footer>
+    </fieldset>
+
+  <!--------------------------------- Footer ------------------------------------------->
+
+  <footer>
       Todos los derechos reservados © 15y3 Productions
-    </footer>
+  </footer>
 
     <!--------------------------------- Cierre html ------------------------------------------->
 

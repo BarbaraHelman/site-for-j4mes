@@ -1,41 +1,47 @@
-.mas-pegados {
-    display: flex;
-    gap: 16px;
-    padding-bottom: 16px;
-    overflow: hidden;
-    overflow-x: scroll;
+/* Pagina index*/ 
+
+.index-pegados {
+    display: grid;
+    .index-pegados-temas {
+        display: flex;
+        gap: 24px;
+        padding-bottom: 16px;
+        .index-image-album {
+            width: 350px;
+            justify-items: center;
+        }
+    }
 }
 
-.mas-pegados-temas {
-    display: flex;
-    gap: 24px;
-    padding-bottom: 16px;
-    overflow-x: hidden;
+@media (min-width:1366px) and (max-width:1920px) {
+    h6 {
+        padding-top: 16px;
+        font-size: 24px;
+    }
 }
 
-.mas-pegados-link {
-    padding-bottom: 24px;
+@media (min-width:320px) and (max-width:767px){
+    .index-pegados-temas {
+        overflow-x: scroll;
+        .index-image-album {
+            width: 200px;
+        }
+    }
 }
 
-.image-album {
-    display: flex; 
-    gap: 16px;
-    justify-items: center;
-}
+/* Página music */
 
-/* Solo en la página music */
-
-.mas-pegados-music {
+.music-mas-pegados {
     display: grid;
     gap: 16px;
     padding-bottom: 16px;
 }
 
-.mas-pegados-music link {
+.music-mas-pegados link {
     padding-bottom: 24px;
 }
 
-.mas-pegados-music-temas {
+.music-mas-pegados-temas {
     display: flex;
     gap: 24px;
     padding-bottom: 16px;
@@ -43,23 +49,27 @@
     overflow-x: scroll;
 }
 
-.image-album-music {
+.music-image-album {
     display: flex; 
     gap: 16px;
     justify-items: center;
 }
 
 @media (min-width:1366px) and (max-width:1920px) {
-    .mas-pegados {
+    .index-mas-pegados {
         columns: 12;
+    }
+    h6 {
+        padding-top: 16px;
+        font-size: 24px;
     }
 }
 
 @media (min-width:320px) and (max-width:767px){
-    .mas-pegados {
+    .index-mas-pegados {
         columns: 4;
     }
-    .mas-pegados-music-temas {
+    .music-mas-pegados-temas {
         display: flex;
     }
 }
