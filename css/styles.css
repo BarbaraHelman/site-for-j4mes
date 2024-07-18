@@ -229,29 +229,26 @@ h6 {
   font-weight: 800;
 }
 
-.ultimo-release-redes img {
-  height: 60px;
-  width: 60px;
-}
-
-.ultimo-album-redes img {
-  height: 60px;
-  width: 60px;
-}
-
-#album-destacado {
-  height: 250px;
-}
-
 @media (min-width: 1366px) and (max-width: 1920px) {
   .ultimo-release {
+    display: block;
+  }
+  .ultimo-release .content-ultimo-release {
     display: flex;
-    margin-top: 30px;
-    columns: 12;
     gap: 40px;
   }
-  p {
-    width: 70%;
+  .ultimo-release .content-ultimo-release .bloque-descripcion #album-destacado {
+    height: 250px;
+  }
+  .ultimo-release .content-ultimo-release .bloque-escuchalo {
+    display: block;
+  }
+  .ultimo-release .content-ultimo-release .bloque-escuchalo .ultimo-release-redes {
+    display: flex;
+    gap: 40px;
+  }
+  .ultimo-release .content-ultimo-release .bloque-escuchalo .ultimo-release-redes img {
+    width: 60px;
   }
 }
 @media (min-width: 320px) and (max-width: 767px) {
@@ -260,9 +257,24 @@ h6 {
     margin-top: 16px;
     columns: 4;
     gap: 20px;
-  }
-  p {
     width: 100%;
+    justify-content: center;
+  }
+  .ultimo-release .content-ultimo-release h4 {
+    text-align: center;
+  }
+  .ultimo-release .content-ultimo-release h6 {
+    text-align: center;
+  }
+  .ultimo-release .content-ultimo-release p {
+    text-align: center;
+    width: 100%;
+  }
+  .ultimo-release .content-ultimo-release .ultimo-release-redes {
+    justify-items: center;
+  }
+  .ultimo-release .content-ultimo-release #album-destacado {
+    height: 200px;
   }
 }
 /* Solo en la página music: ultimo album */
@@ -274,6 +286,11 @@ h6 {
 }
 .ultimo-album p {
   width: 70%;
+}
+
+.ultimo-album-redes img {
+  height: 60px;
+  width: 60px;
 }
 
 @media (min-width: 320px) and (max-width: 767px) {
@@ -384,32 +401,75 @@ ul li {
     display: none;
   }
 }
-.fandom {
+/* redes sociales */
+.fandom-redes {
   display: block;
-  gap: 16px;
-  padding-bottom: 16px;
-}
-
-.fandom-rrss {
-  display: grid;
-  gap: 24px;
-  padding-bottom: 16px;
-}
-
-.image-rrss {
-  display: grid;
-  gap: 16px;
-  justify-items: center;
 }
 
 @media (min-width: 1366px) and (max-width: 1920px) {
-  .fandom-rrss {
-    columns: 12;
+  .fandom-redes h2 {
+    padding-bottom: 60px;
+  }
+  .fandom-redes .fandom-rrss {
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    grid-column-gap: 16px;
+    padding-bottom: 16px;
+  }
+  .fandom-redes .fandom-image-rrss {
+    width: 150px;
   }
 }
 @media (min-width: 320px) and (max-width: 767px) {
-  .fandom-rrss {
-    columns: 4;
+  .fandom-redes h2 {
+    text-align: center;
+    padding-bottom: 30px;
+  }
+  .fandom-redes .fandom-rrss {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+    gap: 16px;
+  }
+  .fandom-redes .fandom-image-rrss {
+    width: 80px;
+    justify-items: center;
+  }
+}
+/* fotos de instagram */
+.full-fandom {
+  display: block;
+}
+
+@media (min-width: 1366px) and (max-width: 1920px) {
+  .full-fandom h2 {
+    padding-bottom: 60px;
+  }
+  .full-fandom .full-fan {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+  }
+  .full-fandom .image-fandom {
+    width: 100px;
+    justify-items: center;
+  }
+}
+@media (min-width: 320px) and (max-width: 767px) {
+  .full-fandom h2 {
+    text-align: center;
+    padding-bottom: 30px;
+  }
+  .full-fandom .full-fan {
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    gap: 16px;
+    justify-content: center;
+  }
+  .full-fandom .image-fan {
+    width: 120px;
   }
 }
 fieldset {

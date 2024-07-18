@@ -9,29 +9,28 @@ h6 {
     font-weight: 800;
 }
 
-.ultimo-release-redes img {
-    height: 60px;
-    width: 60px;
-}  
-
-.ultimo-album-redes img {
-    height: 60px;
-    width: 60px;
-}
-
-#album-destacado {
-    height: 250px;
-}
-
 @media (min-width:1366px) and (max-width:1920px) {
     .ultimo-release {
-        display: flex;
-        margin-top: 30px;
-        columns: 12;
-        gap: 40px;
-    }
-    p {
-        width: 70%;
+        display: block;
+        .content-ultimo-release {
+            display: flex;
+            gap: 40px;
+            .bloque-descripcion {
+                #album-destacado {
+                    height: 250px;
+                }
+            }
+            .bloque-escuchalo {    
+                display: block;
+                .ultimo-release-redes {
+                    display: flex;
+                    gap: 40px;
+                    img {
+                        width: 60px;
+                    }
+                }
+            }
+        }   
     }
 }
 
@@ -41,9 +40,26 @@ h6 {
         margin-top: 16px;
         columns: 4;
         gap: 20px;
-    }
-    p {
         width: 100%;
+        justify-content: center;
+        .content-ultimo-release {
+            h4 {
+                text-align: center;
+            }
+            h6 {
+                text-align: center;
+            }
+            p {
+                text-align: center;
+                width: 100%;
+            }
+            .ultimo-release-redes {
+                justify-items: center;
+            }
+            #album-destacado {
+                height: 200px;
+            }
+        }
     }
 }
         
@@ -57,6 +73,11 @@ h6 {
     p {
         width: 70%;
     }
+}
+
+.ultimo-album-redes img {
+    height: 60px;
+    width: 60px;
 }
 
 @media (min-width:320px) and (max-width:767px){
