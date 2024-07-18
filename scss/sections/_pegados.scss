@@ -7,13 +7,15 @@
         gap: 24px;
         padding-bottom: 16px;
         .index-image-album {
-            width: 350px;
             justify-items: center;
         }
     }
 }
 
 @media (min-width:1366px) and (max-width:1920px) {
+    .index-image-album {
+        width: 350px;
+    }
     h6 {
         padding-top: 16px;
         font-size: 24px;
@@ -24,7 +26,7 @@
     .index-pegados-temas {
         overflow-x: scroll;
         .index-image-album {
-            width: 200px;
+            width: 250px;
         }
     }
 }
@@ -32,51 +34,59 @@
 /* Página music */
 
 .music-mas-pegados {
-    display: grid;
-    gap: 16px;
-    padding-bottom: 16px;
-}
-
-.music-mas-pegados link {
-    padding-bottom: 24px;
-}
-
-.music-mas-pegados-temas {
-    display: flex;
-    gap: 24px;
-    padding-bottom: 16px;
-    overflow: hidden;
-    overflow-x: scroll;
-}
-
-.music-image-album {
-    display: flex; 
-    gap: 16px;
-    justify-items: center;
+    display: block;
 }
 
 @media (min-width:1366px) and (max-width:1920px) {
-    .index-mas-pegados {
-        columns: 12;
-    }
-    h6 {
-        padding-top: 16px;
-        font-size: 24px;
+    .music-mas-pegados {
+        .music-pegados {
+            display: flex;
+            flex-wrap: wrap;
+            overflow-x: scroll;
+            gap: 16px;
+            h6 {
+                padding-top: 16px;
+                font-size: 24px;
+            }
+            .music-mas-pegados-temas {
+                display: grid;
+                grid-template-columns: (8,1fr);
+                grid-template-rows: (2,1fr);
+                grid-column-gap: 16px;
+                padding-bottom: 16px;
+            }
+            .image-album-music {
+                display: flex; 
+                gap: 16px;
+                justify-items: center;
+                width: 220px;
+            }
+        }
     }
 }
 
 @media (min-width:320px) and (max-width:767px){
-    .index-mas-pegados {
-        columns: 4;
-    }
-    .music-mas-pegados-temas {
-        display: flex;
+    .music-mas-pegados {
+        .music-pegados {
+            display: flex;
+            overflow-x: scroll;
+            gap: 16px;
+            h6 {
+                padding-top: 16px;
+                font-size: 24px;
+            }
+            .music-mas-pegados-temas {
+                display: flex;
+                gap: 16px;
+                overflow-x: scroll;
+                padding-bottom: 16px;
+            }
+            .image-album-music {
+                width: 100px;
+            }
+        }
     }
 }
-
-
-
-    
 
     
 

@@ -1,63 +1,60 @@
 /* Solo en la página index: ultimo release */
-
-h4 {
-    font-family: "KodeMono-Regular";
-    font-weight: 800;
-}
-    
-h6 {
-    font-weight: 800;
+.ultimo-release {
+    .index-ultimo-release {
+        .bloque-descripcion .bloque-escuchalo {
+            h4 {
+                font-family: "KodeMono-Regular";
+                font-weight: 800;
+            }  
+            h6 {
+                font-weight: 800;
+            }
+        }
+    }
 }
 
 @media (min-width:1366px) and (max-width:1920px) {
     .ultimo-release {
-        display: block;
-        .content-ultimo-release {
+        display: grid;
+        width: 80%;
+        gap: 40px;
+        .index-ultimo-release {
             display: flex;
+            align-content: flex-start;
             gap: 40px;
             .bloque-descripcion {
+                display: grid;
+                width: 100%;
                 #album-destacado {
                     height: 250px;
                 }
             }
             .bloque-escuchalo {    
-                display: block;
-                .ultimo-release-redes {
+                display: flex;
+                .redes {
                     display: flex;
-                    gap: 40px;
-                    img {
-                        width: 60px;
-                    }
+                    gap: 16px;
+                    width: 100px;
                 }
             }
-        }   
-    }
+        }
+    }   
 }
 
 @media (min-width:320px) and (max-width:767px){
     .ultimo-release {
         display: grid;
-        margin-top: 16px;
-        columns: 4;
-        gap: 20px;
         width: 100%;
-        justify-content: center;
-        .content-ultimo-release {
-            h4 {
-                text-align: center;
-            }
-            h6 {
-                text-align: center;
-            }
-            p {
-                text-align: center;
-                width: 100%;
-            }
+        text-align: center;
+        gap: 20px;
+        .index-ultimo-release {
+            display: grid;
+            gap: 20px;
             .ultimo-release-redes {
-                justify-items: center;
-            }
-            #album-destacado {
-                height: 200px;
+                img {
+                    width: 60px;
+                    padding-top: 16px;
+                }
             }
         }
     }

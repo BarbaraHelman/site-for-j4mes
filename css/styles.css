@@ -220,61 +220,55 @@ i {
   }
 }
 /* Solo en la página index: ultimo release */
-h4 {
+.ultimo-release .index-ultimo-release .bloque-descripcion .bloque-escuchalo h4 {
   font-family: "KodeMono-Regular";
   font-weight: 800;
 }
-
-h6 {
+.ultimo-release .index-ultimo-release .bloque-descripcion .bloque-escuchalo h6 {
   font-weight: 800;
 }
 
 @media (min-width: 1366px) and (max-width: 1920px) {
   .ultimo-release {
-    display: block;
-  }
-  .ultimo-release .content-ultimo-release {
-    display: flex;
+    display: grid;
+    width: 80%;
     gap: 40px;
   }
-  .ultimo-release .content-ultimo-release .bloque-descripcion #album-destacado {
+  .ultimo-release .index-ultimo-release {
+    display: flex;
+    align-content: flex-start;
+    gap: 40px;
+  }
+  .ultimo-release .index-ultimo-release .bloque-descripcion {
+    display: grid;
+    width: 100%;
+  }
+  .ultimo-release .index-ultimo-release .bloque-descripcion #album-destacado {
     height: 250px;
   }
-  .ultimo-release .content-ultimo-release .bloque-escuchalo {
-    display: block;
-  }
-  .ultimo-release .content-ultimo-release .bloque-escuchalo .ultimo-release-redes {
+  .ultimo-release .index-ultimo-release .bloque-escuchalo {
     display: flex;
-    gap: 40px;
   }
-  .ultimo-release .content-ultimo-release .bloque-escuchalo .ultimo-release-redes img {
-    width: 60px;
+  .ultimo-release .index-ultimo-release .bloque-escuchalo .redes {
+    display: flex;
+    gap: 16px;
+    width: 100px;
   }
 }
 @media (min-width: 320px) and (max-width: 767px) {
   .ultimo-release {
     display: grid;
-    margin-top: 16px;
-    columns: 4;
+    width: 100%;
+    text-align: center;
     gap: 20px;
-    width: 100%;
-    justify-content: center;
   }
-  .ultimo-release .content-ultimo-release h4 {
-    text-align: center;
+  .ultimo-release .index-ultimo-release {
+    display: grid;
+    gap: 20px;
   }
-  .ultimo-release .content-ultimo-release h6 {
-    text-align: center;
-  }
-  .ultimo-release .content-ultimo-release p {
-    text-align: center;
-    width: 100%;
-  }
-  .ultimo-release .content-ultimo-release .ultimo-release-redes {
-    justify-items: center;
-  }
-  .ultimo-release .content-ultimo-release #album-destacado {
-    height: 200px;
+  .ultimo-release .index-ultimo-release .ultimo-release-redes img {
+    width: 60px;
+    padding-top: 16px;
   }
 }
 /* Solo en la página music: ultimo album */
@@ -311,11 +305,13 @@ h6 {
   padding-bottom: 16px;
 }
 .index-pegados .index-pegados-temas .index-image-album {
-  width: 350px;
   justify-items: center;
 }
 
 @media (min-width: 1366px) and (max-width: 1920px) {
+  .index-image-album {
+    width: 350px;
+  }
   h6 {
     padding-top: 16px;
     font-size: 24px;
@@ -326,49 +322,57 @@ h6 {
     overflow-x: scroll;
   }
   .index-pegados-temas .index-image-album {
-    width: 200px;
+    width: 250px;
   }
 }
 /* Página music */
 .music-mas-pegados {
-  display: grid;
-  gap: 16px;
-  padding-bottom: 16px;
-}
-
-.music-mas-pegados link {
-  padding-bottom: 24px;
-}
-
-.music-mas-pegados-temas {
-  display: flex;
-  gap: 24px;
-  padding-bottom: 16px;
-  overflow: hidden;
-  overflow-x: scroll;
-}
-
-.music-image-album {
-  display: flex;
-  gap: 16px;
-  justify-items: center;
+  display: block;
 }
 
 @media (min-width: 1366px) and (max-width: 1920px) {
-  .index-mas-pegados {
-    columns: 12;
+  .music-mas-pegados .music-pegados {
+    display: flex;
+    flex-wrap: wrap;
+    overflow-x: scroll;
+    gap: 16px;
   }
-  h6 {
+  .music-mas-pegados .music-pegados h6 {
     padding-top: 16px;
     font-size: 24px;
   }
+  .music-mas-pegados .music-pegados .music-mas-pegados-temas {
+    display: grid;
+    grid-template-columns: 8, 1fr;
+    grid-template-rows: 2, 1fr;
+    grid-column-gap: 16px;
+    padding-bottom: 16px;
+  }
+  .music-mas-pegados .music-pegados .image-album-music {
+    display: flex;
+    gap: 16px;
+    justify-items: center;
+    width: 220px;
+  }
 }
 @media (min-width: 320px) and (max-width: 767px) {
-  .index-mas-pegados {
-    columns: 4;
-  }
-  .music-mas-pegados-temas {
+  .music-mas-pegados .music-pegados {
     display: flex;
+    overflow-x: scroll;
+    gap: 16px;
+  }
+  .music-mas-pegados .music-pegados h6 {
+    padding-top: 16px;
+    font-size: 24px;
+  }
+  .music-mas-pegados .music-pegados .music-mas-pegados-temas {
+    display: flex;
+    gap: 16px;
+    overflow-x: scroll;
+    padding-bottom: 16px;
+  }
+  .music-mas-pegados .music-pegados .image-album-music {
+    width: 100px;
   }
 }
 .Tours {
