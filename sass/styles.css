@@ -472,39 +472,6 @@ ul li {
     width: 120px;
   }
 }
-.videos {
-  display: block;
-}
-.videos iframe {
-  border-radius: 12px;
-}
-
-@media (min-width: 1366px) and (max-width: 1920px) {
-  .videos h2 {
-    padding-bottom: 60px;
-  }
-  .videos .content-videos {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 16px;
-  }
-}
-@media (min-width: 320px) and (max-width: 767px) {
-  .videos h2 {
-    text-align: center;
-    padding-bottom: 30px;
-  }
-  .videos .content-videos {
-    display: flex;
-    width: 100%;
-    flex-wrap: wrap;
-    gap: 16px;
-    justify-content: center;
-  }
-  .videos .content-videos iframe {
-    width: 100%;
-  }
-}
 fieldset {
   display: block;
   background-color: #0000ff;
