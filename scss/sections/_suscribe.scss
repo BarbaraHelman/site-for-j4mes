@@ -1,0 +1,85 @@
+fieldset {
+    display: block;
+    background-image: linear-gradient(to left, $blue, $violet);
+    border-radius: 12px;
+    border: transparent;
+
+    h2 {
+        color: #FFF;
+        background-image: linear-gradient(to left, $blue, $violet);
+        margin: 0px;
+        padding-bottom: 16px;
+        border: transparent;
+    }
+
+    label {
+        color: #FFF;
+        background: $violet;
+        padding-right: 8px;
+        border: transparent;
+    }
+
+    input {
+        color: #000;
+        background-color: #FFF;
+        padding: 8px;
+        border-radius: 12px;
+        border: transparent;
+    }
+
+    .inputs-suscribe {
+        background-image: linear-gradient(to left, $blue, $violet);
+        border: transparent;
+    }
+
+    select {
+        background-color: #FFF;
+        color: #000;
+        border-radius: 12px;
+        padding: 8px;
+        height: 40px;
+    }
+
+    p {
+        background-image: linear-gradient(to left, $blue, $violet);
+        color: #FFF;
+        border: transparent;
+    }
+}
+
+@media (min-width:1366px) and (max-width:1920px) {
+    fieldset {
+        padding: 60px;
+        margin-bottom: 30px;
+        margin-top: 30px;
+        border: transparent;
+
+        input {
+            width: 50%;
+            border: transparent;
+        }
+
+        select {
+            width: 80px;
+            border: transparent;
+        }
+    }
+}
+
+@media (min-width:320px) and (max-width:767px) {
+    fieldset {
+        margin-bottom: 16px;
+        margin-top: 16px;
+        padding: 16px;
+        text-align: center;
+        align-items: center;
+
+        input {
+            width: 100%;
+        }
+
+        select {
+            width: 100%;
+        }
+    }
+}

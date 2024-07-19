@@ -1,0 +1,53 @@
+.videos {
+    display: block;
+
+    iframe {
+        border-radius: 12px;
+    }
+}
+
+@media (min-width:1366px) and (max-width:1920px) {
+    .videos {
+        h2 {
+            padding-bottom: 60px;
+        }
+
+        .content-videos {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 16px;
+
+            .image-album {
+                width: 250px;
+            }
+        }
+    }
+}
+
+@media (min-width:320px) and (max-width:767px) {
+    .videos {
+        display: grid;
+        width: 100%;
+
+        h2 {
+            text-align: center;
+            padding-bottom: 16pxpx;
+        }
+
+        .content-videos {
+            display: grid;
+            justify-content: center;
+            gap: 16px;
+            width: 100%;
+
+            #hide {
+                display: none;
+            }
+
+            iframe {
+                width: 288px;
+                height: auto;
+            }
+        }
+    }
+}

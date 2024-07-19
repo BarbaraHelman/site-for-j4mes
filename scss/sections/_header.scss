@@ -1,0 +1,25 @@
+.section-header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.section-header-img {
+    align-items: center;
+
+    img {
+        align-items: center;
+    }
+}
+
+@media (min-width:1366px) and (max-width:1920px) {
+    .section-header-img img {
+        width: 70%;
+    }
+}
+
+@media (min-width:320px) and (max-width:767px) {
+    .section-header-img img {
+        width: 100%;
+    }
+}

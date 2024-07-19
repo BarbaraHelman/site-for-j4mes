@@ -1,0 +1,62 @@
+.Tours {
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+}
+
+ul {
+    list-style-type: inherit;
+    font-weight: 800;
+    padding-right: 86px;
+    font-size: 18px;
+
+    li {
+        font-size: 16px;
+        font-weight: 400;
+    }
+}
+
+@media (min-width:1366px) and (max-width:1920px) {
+    .Tours {
+        grid-template-columns: repeat(5, 1fr);
+    }
+}
+
+@media (min-width:320px) and (max-width:767px) {
+    .Tours {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (min-width:320px) and (max-width:767px) {
+    ul {
+        list-style-type: inherit;
+        font-weight: 800;
+        padding-right: 86px;
+        overflow-y: hidden;
+    }
+
+    .ul-tour {
+        display: none;
+    }
+}
+
+/* Pagina tours */
+
+.tour-page {
+    display: block;
+
+    iframe {
+        width: 100%;
+    }
+}
+
+@media (min-width:320px) and (max-width:767px) {
+    .tour-page {
+        iframe {
+            width: 100%;
+            height: 300px;
+        }
+    }
+}
