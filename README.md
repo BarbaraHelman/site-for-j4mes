@@ -1,5 +1,5 @@
 Profe/Tutores
-Me parece que me está andando mal la pc o algo... la url no me muestra los cambios.
+Me parece que me está andando mal la pc o algo... la url no me muestra los cambios. (el mensaje original era este, lo dejo, pero la url ya se actualizó... andaba lento anoche se ve)
 Espero que de todos modos puedan ver el código en el repo.
 
 Les mando un beso!
