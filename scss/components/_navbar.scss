@@ -1,6 +1,7 @@
 .nav-link {
     color: #FFF;
     font-family: "KodeMono-Regular";
+
     &:hover {
         color: $violet !important;
         text-decoration: underline;
@@ -19,9 +20,11 @@
     vertical-align: middle;
     padding-right: 20px;
     letter-spacing: 5px;
+
     &:hover {
         color: #FFF;
     }
+
     img {
         width: 50px;
         height: auto;
@@ -37,16 +40,19 @@
 
 @media (min-width:320px) and (max-width:767px) {
     .navbar {
-    padding: 16px;
+        padding: 16px;
     }
+
     .navbar-toggler {
         width: auto;
         background-color: $violet;
     }
+
     .navbar-toggler-icon {
         background-color: $violet;
         color: #FFF;
     }
+
     .container-fluid {
         justify-content: flex-start;
     }

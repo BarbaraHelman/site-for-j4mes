@@ -220,6 +220,9 @@ i {
   }
 }
 /* Solo en la página index: ultimo release */
+.ultimo-release {
+  display: grid;
+}
 .ultimo-release .index-ultimo-release .bloque-descripcion .bloque-escuchalo h4 {
   font-family: "KodeMono-Regular";
   font-weight: 800;
@@ -248,6 +251,7 @@ i {
   }
   .ultimo-release .index-ultimo-release .bloque-escuchalo {
     display: flex;
+    gap: 16px;
   }
   .ultimo-release .index-ultimo-release .bloque-escuchalo .redes {
     display: flex;
@@ -266,7 +270,10 @@ i {
     display: grid;
     gap: 20px;
   }
-  .ultimo-release .index-ultimo-release .ultimo-release-redes img {
+  .ultimo-release .index-ultimo-release .bloque-escuchalo {
+    gap: 16px;
+  }
+  .ultimo-release .index-ultimo-release .bloque-escuchalo .redes {
     width: 60px;
     padding-top: 16px;
   }
@@ -334,12 +341,11 @@ i {
   .music-mas-pegados .music-pegados {
     display: flex;
     flex-wrap: wrap;
-    overflow-x: scroll;
     gap: 16px;
   }
   .music-mas-pegados .music-pegados h6 {
     padding-top: 16px;
-    font-size: 24px;
+    font-size: 20px;
   }
   .music-mas-pegados .music-pegados .music-mas-pegados-temas {
     display: grid;
@@ -356,23 +362,29 @@ i {
   }
 }
 @media (min-width: 320px) and (max-width: 767px) {
+  .music-mas-pegados {
+    display: grid;
+    gap: 16px;
+  }
   .music-mas-pegados .music-pegados {
     display: flex;
-    overflow-x: scroll;
     gap: 16px;
+    overflow-x: scroll;
   }
   .music-mas-pegados .music-pegados h6 {
     padding-top: 16px;
-    font-size: 24px;
+    font-size: 14px;
   }
   .music-mas-pegados .music-pegados .music-mas-pegados-temas {
-    display: flex;
+    display: grid;
     gap: 16px;
-    overflow-x: scroll;
     padding-bottom: 16px;
   }
   .music-mas-pegados .music-pegados .image-album-music {
-    width: 100px;
+    display: flex;
+    gap: 16px;
+    justify-items: center;
+    width: 200px;
   }
 }
 .Tours {
@@ -412,6 +424,20 @@ ul li {
   }
   .ul-tour {
     display: none;
+  }
+}
+/* Pagina tours */
+.tour-page {
+  display: block;
+}
+.tour-page iframe {
+  width: 100%;
+}
+
+@media (min-width: 320px) and (max-width: 767px) {
+  .tour-page iframe {
+    width: 100%;
+    height: 300px;
   }
 }
 /* redes sociales */
@@ -464,8 +490,8 @@ ul li {
     flex-wrap: wrap;
     gap: 16px;
   }
-  .full-fandom .image-fandom {
-    width: 100px;
+  .full-fandom .image-fan {
+    width: 350px;
     justify-items: center;
   }
 }
@@ -501,6 +527,9 @@ ul li {
     flex-wrap: wrap;
     gap: 16px;
   }
+  .videos .content-videos .image-album {
+    width: 250px;
+  }
 }
 @media (min-width: 320px) and (max-width: 767px) {
   .videos {
@@ -527,20 +556,22 @@ ul li {
 }
 fieldset {
   display: block;
-  background-color: #0000ff;
+  background-image: linear-gradient(to left, #0000ff, #8a2be2);
   border-radius: 12px;
-  border: #0000ff;
+  border: transparent;
 }
 fieldset h2 {
   color: #FFF;
-  background-color: #0000ff;
+  background-image: linear-gradient(to left, #0000ff, #8a2be2);
   margin: 0px;
   padding-bottom: 16px;
+  border: transparent;
 }
 fieldset label {
   color: #FFF;
-  background-color: transparent;
+  background: #8a2be2;
   padding-right: 8px;
+  border: transparent;
 }
 fieldset input {
   color: #000;
@@ -550,7 +581,8 @@ fieldset input {
   border: transparent;
 }
 fieldset .inputs-suscribe {
-  background-color: #0000ff;
+  background-image: linear-gradient(to left, #0000ff, #8a2be2);
+  border: transparent;
 }
 fieldset select {
   background-color: #FFF;
@@ -560,8 +592,9 @@ fieldset select {
   height: 40px;
 }
 fieldset p {
-  background-color: #0000ff;
+  background-image: linear-gradient(to left, #0000ff, #8a2be2);
   color: #FFF;
+  border: transparent;
 }
 
 @media (min-width: 1366px) and (max-width: 1920px) {
@@ -569,12 +602,15 @@ fieldset p {
     padding: 60px;
     margin-bottom: 30px;
     margin-top: 30px;
+    border: transparent;
   }
   fieldset input {
     width: 50%;
+    border: transparent;
   }
   fieldset select {
     width: 80px;
+    border: transparent;
   }
 }
 @media (min-width: 320px) and (max-width: 767px) {

@@ -1,11 +1,13 @@
-/* Pagina index*/ 
+/* Pagina index*/
 
 .index-pegados {
     display: grid;
+
     .index-pegados-temas {
         display: flex;
         gap: 24px;
         padding-bottom: 16px;
+
         .index-image-album {
             justify-items: center;
         }
@@ -16,15 +18,17 @@
     .index-image-album {
         width: 350px;
     }
+
     h6 {
         padding-top: 16px;
         font-size: 24px;
     }
 }
 
-@media (min-width:320px) and (max-width:767px){
+@media (min-width:320px) and (max-width:767px) {
     .index-pegados-temas {
         overflow-x: scroll;
+
         .index-image-album {
             width: 250px;
         }
@@ -42,21 +46,23 @@
         .music-pegados {
             display: flex;
             flex-wrap: wrap;
-            overflow-x: scroll;
             gap: 16px;
+
             h6 {
                 padding-top: 16px;
-                font-size: 24px;
+                font-size: 20px;
             }
+
             .music-mas-pegados-temas {
                 display: grid;
-                grid-template-columns: (8,1fr);
-                grid-template-rows: (2,1fr);
+                grid-template-columns: (8, 1fr);
+                grid-template-rows: (2, 1fr);
                 grid-column-gap: 16px;
                 padding-bottom: 16px;
             }
+
             .image-album-music {
-                display: flex; 
+                display: flex;
                 gap: 16px;
                 justify-items: center;
                 width: 220px;
@@ -65,30 +71,33 @@
     }
 }
 
-@media (min-width:320px) and (max-width:767px){
+@media (min-width:320px) and (max-width:767px) {
     .music-mas-pegados {
+        display: grid;
+        gap: 16px;
+
         .music-pegados {
             display: flex;
-            overflow-x: scroll;
             gap: 16px;
+            overflow-x: scroll;
+
             h6 {
                 padding-top: 16px;
-                font-size: 24px;
+                font-size: 14px;
             }
+
             .music-mas-pegados-temas {
-                display: flex;
+                display: grid;
                 gap: 16px;
-                overflow-x: scroll;
                 padding-bottom: 16px;
             }
+
             .image-album-music {
-                width: 100px;
+                display: flex;
+                gap: 16px;
+                justify-items: center;
+                width: 200px;
             }
         }
     }
 }
-
-    
-
-
-

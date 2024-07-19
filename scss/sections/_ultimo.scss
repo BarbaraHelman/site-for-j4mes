@@ -1,11 +1,13 @@
 /* Solo en la página index: ultimo release */
 .ultimo-release {
+    display: grid;
     .index-ultimo-release {
         .bloque-descripcion .bloque-escuchalo {
             h4 {
                 font-family: "KodeMono-Regular";
                 font-weight: 800;
-            }  
+            }
+
             h6 {
                 font-weight: 800;
             }
@@ -18,19 +20,25 @@
         display: grid;
         width: 80%;
         gap: 40px;
+
         .index-ultimo-release {
             display: flex;
             align-content: flex-start;
             gap: 40px;
+
             .bloque-descripcion {
                 display: grid;
                 width: 100%;
+
                 #album-destacado {
                     height: 250px;
                 }
             }
-            .bloque-escuchalo {    
+
+            .bloque-escuchalo {
                 display: flex;
+                gap: 16px;
+
                 .redes {
                     display: flex;
                     gap: 16px;
@@ -38,20 +46,23 @@
                 }
             }
         }
-    }   
+    }
 }
 
-@media (min-width:320px) and (max-width:767px){
+@media (min-width:320px) and (max-width:767px) {
     .ultimo-release {
         display: grid;
         width: 100%;
         text-align: center;
         gap: 20px;
+
         .index-ultimo-release {
             display: grid;
             gap: 20px;
-            .ultimo-release-redes {
-                img {
+
+            .bloque-escuchalo {
+                gap: 16px;
+                .redes {
                     width: 60px;
                     padding-top: 16px;
                 }
@@ -59,7 +70,7 @@
         }
     }
 }
-        
+
 /* Solo en la página music: ultimo album */
 
 .ultimo-album {
@@ -67,6 +78,7 @@
     columns: 12;
     gap: 40px;
     margin-top: 30px;
+
     p {
         width: 70%;
     }
@@ -77,10 +89,11 @@
     width: 60px;
 }
 
-@media (min-width:320px) and (max-width:767px){
+@media (min-width:320px) and (max-width:767px) {
     .ultimo-album {
         display: grid;
     }
+
     p {
         width: 100%;
     }

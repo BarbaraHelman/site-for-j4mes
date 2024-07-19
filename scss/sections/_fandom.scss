@@ -7,26 +7,29 @@
 @media (min-width:1366px) and (max-width:1920px) {
     .fandom-redes {
         h2 {
-        padding-bottom: 60px;
+            padding-bottom: 60px;
         }
+
         .fandom-rrss {
             display: grid;
             grid-template-columns: repeat(8, 1fr);
             grid-column-gap: 16px;
             padding-bottom: 16px;
         }
+
         .fandom-image-rrss {
             width: 150px;
         }
     }
 }
 
-@media (min-width:320px) and (max-width:767px){
+@media (min-width:320px) and (max-width:767px) {
     .fandom-redes {
         h2 {
             text-align: center;
             padding-bottom: 30px;
-        } 
+        }
+
         .fandom-rrss {
             display: flex;
             flex-wrap: wrap;
@@ -34,6 +37,7 @@
             width: 100%;
             gap: 16px;
         }
+
         .fandom-image-rrss {
             width: 80px;
             justify-items: center;
@@ -52,24 +56,27 @@
         h2 {
             padding-bottom: 60px;
         }
+
         .full-fan {
             display: flex;
             flex-wrap: wrap;
             gap: 16px;
         }
-        .image-fandom {
-            width: 100px;
+
+        .image-fan {
+            width: 350px;
             justify-items: center;
         }
     }
 }
 
-@media (min-width:320px) and (max-width:767px){
+@media (min-width:320px) and (max-width:767px) {
     .full-fandom {
         h2 {
             text-align: center;
             padding-bottom: 30px;
         }
+
         .full-fan {
             display: flex;
             width: 100%;
@@ -77,6 +84,7 @@
             gap: 16px;
             justify-content: center;
         }
+
         .image-fan {
             width: 120px;
         }
