@@ -219,7 +219,7 @@ i {
     width: 100%;
   }
 }
-/* Solo en la página index: ultimo release */
+/*--------------- Solo en la página index: ultimo release -----------*/
 .ultimo-release {
   display: grid;
 }
@@ -278,7 +278,7 @@ i {
     padding-top: 16px;
   }
 }
-/* Solo en la página music: ultimo album */
+/*---------------- Solo en la página music: ultimo album--------------- */
 .ultimo-album {
   display: flex;
   columns: 12;
@@ -302,7 +302,7 @@ i {
     width: 100%;
   }
 }
-/* Pagina index*/
+/*---------------------- Pagina index------------------------*/
 .index-pegados {
   display: grid;
 }
@@ -332,7 +332,7 @@ i {
     width: 250px;
   }
 }
-/* Página music */
+/*----------------------- Página music -----------------------*/
 .music-mas-pegados {
   display: block;
 }
@@ -426,7 +426,7 @@ ul li {
     display: none;
   }
 }
-/* Pagina tours */
+/*------------------------- Pagina tours---------------------- */
 .tour-page {
   display: block;
 }
@@ -440,7 +440,7 @@ ul li {
     height: 300px;
   }
 }
-/* redes sociales */
+/*--------------- logos de redes sociales-------------------- */
 .fandom-redes {
   display: block;
 }
@@ -476,7 +476,7 @@ ul li {
     justify-items: center;
   }
 }
-/* fotos de instagram */
+/*------------------ fotos de instagram --------------------*/
 .full-fandom {
   display: block;
 }

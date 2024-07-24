@@ -42,7 +42,7 @@ ul {
     }
 }
 
-/* Pagina tours */
+/*------------------------- Pagina tours---------------------- */
 
 .tour-page {
     display: block;
@@ -54,6 +54,7 @@ ul {
 
 @media (min-width:320px) and (max-width:767px) {
     .tour-page {
+        
         iframe {
             width: 100%;
             height: 300px;

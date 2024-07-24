@@ -1,4 +1,4 @@
-/* Pagina index*/
+/*---------------------- Pagina index------------------------*/
 
 .index-pegados {
     display: grid;
@@ -35,7 +35,7 @@
     }
 }
 
-/* Página music */
+/*----------------------- Página music -----------------------*/
 
 .music-mas-pegados {
     display: block;
@@ -43,6 +43,7 @@
 
 @media (min-width:1366px) and (max-width:1920px) {
     .music-mas-pegados {
+        
         .music-pegados {
             display: flex;
             flex-wrap: wrap;

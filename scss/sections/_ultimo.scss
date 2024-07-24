@@ -1,8 +1,12 @@
-/* Solo en la página index: ultimo release */
+/*--------------- Solo en la página index: ultimo release -----------*/
+
 .ultimo-release {
     display: grid;
+
     .index-ultimo-release {
+
         .bloque-descripcion .bloque-escuchalo {
+
             h4 {
                 font-family: "KodeMono-Regular";
                 font-weight: 800;
@@ -62,6 +66,7 @@
 
             .bloque-escuchalo {
                 gap: 16px;
+
                 .redes {
                     width: 60px;
                     padding-top: 16px;
@@ -71,7 +76,7 @@
     }
 }
 
-/* Solo en la página music: ultimo album */
+/*---------------- Solo en la página music: ultimo album--------------- */
 
 .ultimo-album {
     display: flex;
