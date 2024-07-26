@@ -6,7 +6,7 @@
     }
 }
 
-@media (min-width:1366px) and (max-width:1920px) {
+@media (min-width:1024px) {
     .videos {
         
         h2 {
@@ -17,30 +17,30 @@
             display: flex;
             flex-wrap: wrap;
             gap: 16px;
+        }
+    }
+}
 
-            .image-album {
-                width: 250px;
+@media (min-width:768px) and (max-width:1023px) {
+    .videos {
+        
+        h2 {
+            padding-bottom: 60px;
+        }
+
+        .content-videos {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 16px;
+            iframe {
+                width: 310px;
+                height: auto;
             }
         }
     }
 }
 
 @media (min-width:320px) and (max-width:767px) {
-    .videos {
-        display: grid;
-        width: 100%;
-
-        h2 {
-            text-align: center;
-            padding-bottom: 16pxpx;
-        }
-
-        .content-videos {
-            display: grid;
-            justify-content: center;
-            gap: 16px;
-            width: 100%;
-
             #hide {
                 display: none;
             }
@@ -49,6 +49,4 @@
                 width: 288px;
                 height: auto;
             }
-        }
-    }
 }
