@@ -3,7 +3,6 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  background-color: #000;
   color: #FFF;
 }
 
@@ -15,6 +14,7 @@ body {
   border-color: transparent;
   overflow-x: hidden;
   text-align: left;
+  background-color: #000;
 }
 
 @font-face {
@@ -120,6 +120,76 @@ img {
   }
   h4 {
     font-size: 14px;
+  }
+}
+@media (min-width: 1024px) {
+  body {
+    padding: 0px 60px;
+    background-color: #000;
+  }
+  body section {
+    padding-bottom: 30px;
+  }
+  body h1 {
+    padding: 0;
+  }
+  body h2 {
+    padding: 0;
+  }
+  body h3 {
+    padding: 0;
+  }
+  body h4 {
+    padding: 0;
+  }
+  body h6 {
+    padding: 0;
+  }
+}
+@media (min-width: 768px) and (max-width: 1023px) {
+  body {
+    padding: 0px 60px;
+  }
+  body section {
+    padding-bottom: 30px;
+  }
+  body h1 {
+    padding: 0;
+  }
+  body h2 {
+    padding: 0;
+  }
+  body h3 {
+    padding: 0;
+  }
+  body h4 {
+    padding: 0;
+  }
+  body h6 {
+    padding: 0;
+  }
+}
+@media (min-width: 320px) and (max-width: 767px) {
+  body {
+    padding: 16px;
+  }
+  body section {
+    padding-bottom: 30px;
+  }
+  body h1 {
+    padding: 0;
+  }
+  body h2 {
+    padding: 0;
+  }
+  body h3 {
+    padding: 0;
+  }
+  body h4 {
+    padding: 0;
+  }
+  body h6 {
+    padding: 0;
   }
 }
 .nav-link {
@@ -293,7 +363,6 @@ i {
   }
   .ultimo-release .index-ultimo-release .bloque-descripcion {
     display: grid;
-    width: 100%;
   }
   .ultimo-release .index-ultimo-release .bloque-descripcion #album-destacado {
     height: 250px;
@@ -689,14 +758,12 @@ fieldset {
 }
 fieldset h2 {
   color: #FFF;
-  background-image: linear-gradient(to left, #0000ff, #8a2be2);
   margin: 0px;
   padding-bottom: 16px;
   border: transparent;
 }
 fieldset label {
   color: #FFF;
-  background: #8a2be2;
   padding-right: 8px;
   border: transparent;
 }
@@ -708,7 +775,6 @@ fieldset input {
   border: transparent;
 }
 fieldset .inputs-suscribe {
-  background-image: linear-gradient(to left, #0000ff, #8a2be2);
   border: transparent;
 }
 fieldset select {
@@ -719,7 +785,6 @@ fieldset select {
   height: 40px;
 }
 fieldset p {
-  background-image: linear-gradient(to left, #0000ff, #8a2be2);
   color: #FFF;
   border: transparent;
 }
