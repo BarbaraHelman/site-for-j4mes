@@ -1,75 +1,39 @@
-$margin: 60px;
-$padding: 60px;
+$pd: 60px;
 
-@media (min-width:1024px) {
-  body {
-      padding: 0px 60px;
-      background-color: #000;
-    section {
-      padding-bottom: 30px;
-    }
-    h1 {
-      padding: 0; 
-     }
-    h2 {
-     padding: 0; 
-    }
-    h3 {
-      padding: 0; 
-     }
-     h4 {
-      padding: 0; 
-     }
-     h6 {
-      padding: 0; 
-     }
+@mixin pd-mg-body {
+  padding-left: $pd;
+  padding-right: $pd;
+  padding-top: $pd/2;
+}
+
+@mixin pd-sections {
+  padding-top: $pd/2;
+}
+
+@mixin pd-titles {
+  h1 {
+    padding-top: $pd/2;
+    padding-bottom: $pd;
+  }
+
+  h2 {
+    padding-bottom: $pd/2;
+  }
+
+  h4 {
+    padding-bottom: $pd/8;
+  }
+
+  h6 {
+    padding-top: $pd/4;
+    padding-bottom: $pd/8;
+  }
+  p {
+    padding-bottom: $pd/4;
   }
 }
 
-@media (min-width:768px) and (max-width:1023px) {
-  body {
-      padding: 0px 60px;
-    section {
-        padding-bottom: 30px;
-    }
-    h1 {
-      padding: 0; 
-     }
-    h2 {
-     padding: 0; 
-    }
-    h3 {
-      padding: 0; 
-     }
-     h4 {
-      padding: 0; 
-     }
-     h6 {
-      padding: 0; 
-     }
-  }
+@mixin footer {
+  padding-top: $pd;
+  padding-bottom: $pd*2;
 }
-
-@media (min-width:320px) and (max-width:767px) {
-  body {
-    padding: 16px;
-    section {
-      padding-bottom: 30px;
-    }
-    h1 {
-      padding: 0; 
-     }
-    h2 {
-      padding: 0; 
-    }
-    h3 {
-      padding: 0; 
-     }
-    h4 {
-      padding: 0; 
-     }
-    h6 {
-      padding: 0; 
-    }
-  }
-}      
