@@ -16,3 +16,9 @@ Pendientes a mejorar para el final:
 - imagenes pasar a webp
 - mejorar la performance del loading de los videos de youtube
 - añadir links a todos los botones
+
+Post entrega3, ya en master:
+- imagenes en webp
+- lazy loading para videos de youtube
+- thumbnail (en estado de prueba)
+- sección suscribe: modificaciones en el index, por mejoras. actualmente roto, en construcción.
