@@ -6,7 +6,6 @@ fieldset {
     
     h2 {
         color: #FFF;
-        background-image: linear-gradient(to left, $blue, $violet);
         margin: 0px;
         padding-bottom: 16px;
         border: transparent;
@@ -14,7 +13,6 @@ fieldset {
 
     label {
         color: #FFF;
-        background: $violet;
         padding-right: 8px;
         border: transparent;
     }
@@ -28,7 +26,6 @@ fieldset {
     }
 
     .inputs-suscribe {
-        background-image: linear-gradient(to left, $blue, $violet);
         border: transparent;
     }
 
@@ -41,13 +38,12 @@ fieldset {
     }
 
     p {
-        background-image: linear-gradient(to left, $blue, $violet);
         color: #FFF;
         border: transparent;
     }
 }
 
-@media (min-width:1366px) and (max-width:1920px) {
+@media (min-width:1024px) {
     fieldset {
         padding: 60px;
         margin-bottom: 30px;
@@ -56,6 +52,25 @@ fieldset {
 
         input {
             width: 50%;
+            border: transparent;
+        }
+
+        select {
+            width: 80px;
+            border: transparent;
+        }
+    }
+}
+
+@media (min-width:768px) and (max-width:1023px) {
+    fieldset {
+        padding: 60px;
+        margin-bottom: 30px;
+        margin-top: 30px;
+        border: transparent;
+
+        input {
+            width: 100%;
             border: transparent;
         }
 

@@ -16,7 +16,7 @@ button {
     color: #FFF;
 }
 
-@media (min-width:1366px) and (max-width:1920px) {
+@media (min-width:1024px) {
     a {
         font-size: 18px;
     }
@@ -27,6 +27,16 @@ button {
         &:hover {
             background-color: $violet-hover;
         }
+    }
+}
+
+@media (min-width:768px) and (max-width:1023px) {
+    a {
+        font-size: 18px;
+    }
+
+    button {
+        font-size: 18px;
     }
 }
 

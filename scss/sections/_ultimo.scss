@@ -1,4 +1,4 @@
-/*--------------- Solo en la página index: ultimo release -----------*/
+/*--------------- Página index: ultimo release -----------*/
 
 .ultimo-release {
     display: grid;
@@ -19,7 +19,40 @@
     }
 }
 
-@media (min-width:1366px) and (max-width:1920px) {
+@media (min-width:1024px) {
+    .ultimo-release {
+        display: grid;
+        width: 80%;
+        gap: 40px;
+
+        .index-ultimo-release {
+            display: flex;
+            align-content: flex-start;
+            gap: 40px;
+
+            .bloque-descripcion {
+                display: grid;
+
+                #album-destacado {
+                    height: 250px;
+                }
+            }
+
+            .bloque-escuchalo {
+                display: flex;
+                gap: 16px;
+
+                .redes {
+                    display: flex;
+                    gap: 16px;
+                    width: 100px;
+                }
+            }
+        }
+    }
+}
+
+@media (min-width:768px) and (max-width:1023px) {
     .ultimo-release {
         display: grid;
         width: 80%;
@@ -46,7 +79,7 @@
                 .redes {
                     display: flex;
                     gap: 16px;
-                    width: 100px;
+                    width: 80px;
                 }
             }
         }
@@ -73,33 +106,5 @@
                 }
             }
         }
-    }
-}
-
-/*---------------- Solo en la página music: ultimo album--------------- */
-
-.ultimo-album {
-    display: flex;
-    columns: 12;
-    gap: 40px;
-    margin-top: 30px;
-
-    p {
-        width: 70%;
-    }
-}
-
-.ultimo-album-redes img {
-    height: 60px;
-    width: 60px;
-}
-
-@media (min-width:320px) and (max-width:767px) {
-    .ultimo-album {
-        display: grid;
-    }
-
-    p {
-        width: 100%;
     }
 }

@@ -2,7 +2,6 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    background-color: #000;
     color: #FFF;
 }
 
@@ -14,6 +13,7 @@ body {
     border-color: transparent;
     overflow-x: hidden;
     text-align: left;
+    background-color: #000;
 }
 
 @font-face {
@@ -62,7 +62,32 @@ img {
     border-radius: 12px;
 }
 
-@media (min-width:1366px) and (max-width:1920px) {
+@media (min-width:1024px) {
+    body {
+        padding: 0px 60px;
+        background-color: #000;
+    }
+
+    section {
+        padding-bottom: 30px;
+    }
+
+    h1 {
+        font-size: 70px;
+    }
+
+    h2 {
+        font-size: 32px;
+        padding-top: 30px;
+        padding-bottom: 16px;
+    }
+
+    h4 {
+        font-size: 16px;
+    }
+}
+
+@media (min-width:768px) and (max-width:1023px) {
     body {
         padding: 0px 60px;
         background-color: #000;
@@ -106,6 +131,7 @@ img {
         font-size: 18px;
         padding-top: 16px;
         padding-bottom: 8px;
+        text-align: center;
     }
 
     h4 {
