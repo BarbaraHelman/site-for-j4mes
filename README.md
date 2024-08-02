@@ -5,3 +5,7 @@ Mejoras del final:
 - lazy loading para videos de youtube
 - thumbnail 
 - sección suscribe: mejorada
+
+URL del sitio:
+http://j4mes.is-great.org/
+http://barbara-helman.rf.gd/
