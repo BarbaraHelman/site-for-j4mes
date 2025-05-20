@@ -2,4 +2,27 @@ footer {
     text-align: center;
     color: #FFF;
     margin-top: 50px;
+    
+    button {
+        color: violet !important;
+    }
+    
+    .modal-content {
+        h5 {
+            color: black !important;
+        }
+        .btn-primary {
+            color: violet !important;
+        }
+        .btn-secondary {
+            border: violet !important;
+        }
+        p {
+            color: black !important;
+            font-size: 10px;
+            text-align: left;
+        }
+    }
 }
+
+
