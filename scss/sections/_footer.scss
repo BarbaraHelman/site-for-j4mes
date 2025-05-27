@@ -1,32 +1,14 @@
-footer {
-    text-align: center;
-    color: #FFF;
+.footer-index {
     margin-top: 50px;
-    
-    button {
-        color: violet !important;
-    }
-    
-    .footer-sections {
-        text-align: left !important; 
+
+    h4 {
+        text-align: center !important;
     }
 
-    .exampleModalLabel {
-        h5 {
-            color: black !important;
-        }
-        .btn-primary {
-            color: violet !important;
-        }
-        .btn-secondary {
-            border: violet !important;
-        }
-        p {
-            color: black !important;
-            font-size: 10px;
-            text-align: left;
-        }
+    .footer-tyc {
+        .btn-hover-color {
+        color: none;
+        text-decoration: none;
+    }    
     }
 }
-
-
